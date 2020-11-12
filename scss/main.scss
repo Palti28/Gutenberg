@@ -1,0 +1,44 @@
+@import '../bootstrap/css/bootstrap.css';
+
+$gray-10 : #333333;
+$gray-40 : #838994; //NAV, LABEL
+$blue-50 : #2F80ED; //PRIMARY
+
+h1,h2,h3,h4,h5,h6{
+  color: $gray-10;
+}
+
+h1{}
+
+h3{
+  font-size: 18px;
+}
+
+h5{
+  font-size: 16px;
+}
+
+
+label{
+  font-size: 12px;
+  color: $gray-40;
+}
+
+hr{
+  width: 100%;
+}
+
+body{
+  font-size: 14px;
+
+  &.sidenav-toggled{
+  	aside{
+  		left: 0;
+  	}
+  }
+}
+
+
+@import 'component.scss';
+
+  

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Design-Login</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../scss/main.css">
+  <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg w-100">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/images/Logo.svg" alt="">
+        </a>
+        <div class="d--block d-md-non d-lg-none">
+          <i class="fas fa-bars" id="sidebarToggle"></i>
+        </div>
+        <div class="d-none d-md-none d-lg-block ml-auto">
+          <form class="form-inline ml-0 ml-md-auto">
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <div class="dropdown">
+            <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-bell" class="text-gray-50"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">
+                <img src="../../assets/images/reg-printing.svg" alt="">
+                Printing Vendor
+              </a>
+              <a class="dropdown-item" href="#">
+                <img src="../../assets/images/reg-printing.svg" alt="">
+                Design Vendor
+              </a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="border-right ml-2 mr-3">&nbsp;</div>
+          <div class="dropdown">
+            <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar.jpg" alt="">
+              Palti Gorat
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </form>
+        </div>
+        
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container d-flex">
+    <!-- || SIDEBAR -->
+    <aside>
+      <nav class="sidebar" id="sideBar">
+        <div class="sidebar__header d-flex flex-column justify-content-center text-center">
+          <div class="d-flex justify-content-center">
+            <img class="avatar avatar-md" src="../../assets/images/dummy_avatar.jpg" alt="">
+          </div>
+          <h5 id="vendorName" class="mt-2">Paltidsgn.std</h5>
+          <div id="vendor" class="rating-star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <label for="" id="vendor" class="mt-1">Complete 20 of 20 order</label>
+          <hr>
+        </div>
+        <div class="sidebar__menu">
+          <div class="nav">
+            <div class="nav__item">
+              <a class="nav-link " href="index.html">
+                Dashboard
+              </a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " data-toggle="collapse" href="#produkCollapse" role="button" aria-expanded="false"
+                aria-controls="produkCollapse">
+                <i class="fas fa-archive mr-2"></i>
+                Produk
+                <i class="fas fa-chevron-right ml-auto nav-link__arrow-icon"></i>
+              </a>
+            </div>
+            <div class="collapse multi-collapse" id="produkCollapse">
+              <div class="nav__item">
+                <a class="nav-link" href="produk/all.html">Semua Produk</a>
+              </div>
+              <div class="nav__item">
+                <a class="nav-link" href="produk/new-produk.html">Tambah Produk</a>
+
+              </div>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="penjualan.html">
+                <i class="fas fa-book mr-2"></i>
+                Penjualan</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="keuangan.html">
+                <i class="far fa-file-alt mr-2"></i>
+                Keuangan</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="chat.html">
+                <i class="fas fa-comment-dots mr-2"></i>
+              Chat</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " data-toggle="collapse" href="#tokoCollapse" role="button" aria-expanded="false"
+                aria-controls="tokoCollapse">
+                <i class="fas fa-store mr-2"></i>
+
+                Toko
+                <i class="fas fa-chevron-right ml-auto nav-link__arrow-icon"></i>
+              </a>
+            </div>
+            <div class="collapse multi-collapse" id="tokoCollapse">
+              <div class="nav__item">
+                <a class="nav-link" href="toko/profile.html">Profile Toko</a>
+              </div>
+              <div class="nav__item">
+                <a class="nav-link" href="toko/rating.html">Rating Toko</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </aside>
+    <!-- || SIDEBAR END  -->
+
+  </div>
+  <footer>
+
+  </footer>
+  <div class="backdrop-black" id="backdrop"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="../../js/script.js"></script>
+
+</body>
+
+</html>
