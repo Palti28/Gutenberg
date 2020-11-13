@@ -186,19 +186,19 @@ aside {
     position: absolute;
   }
 }
-section.content {
+section.content, .content {
   padding-top: 24px;
   padding-bottom: 40px;
 }
-section.content .card {
+section.content .card, .content .card {
   border-radius: 0;
   box-shadow: none;
 }
 @media (min-width: 765px) {
-  section.content {
+  section.content, .content {
     padding: 24px 24px 48px;
   }
-  section.content .card {
+  section.content .card, .content .card {
     border-radius: 8px;
     box-shadow: 0px 1px 6px rgba(49, 53, 59, 0.12);
   }
