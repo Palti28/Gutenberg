@@ -268,6 +268,10 @@ section.content .card, .content .card {
   border-radius: 8px;
   background-color: #fff;
 }
+.card--product img {
+  height: 170px;
+  object-fit: cover;
+}
 .card--product .more-icon {
   width: 10px;
   height: 10px;

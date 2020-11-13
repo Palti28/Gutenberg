@@ -306,6 +306,11 @@ section.content, .content {
   border-radius: 8px;
   background-color: #fff;
 
+  img{
+    height: 170px;
+    object-fit: cover;
+  }
+
   .more-icon {
     width: 10px;
     height: 10px;
