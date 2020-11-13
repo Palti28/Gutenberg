@@ -18,6 +18,14 @@
         <a class="navbar-brand" href="#">
           <img src="../../assets/images/Logo.svg" alt="">
         </a>
+
+        <div class="input-group search-box">
+          <input type="text" class="form-control" placeholder="Temukan kebutuhanmu disini" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">Cari</button>
+          </div>
+        </div>
+
         <div class="d--block d-md-non d-lg-none">
           <i class="fas fa-bars" id="sidebarToggle"></i>
         </div>
@@ -25,73 +33,85 @@
         <!-- Activate User -->
         <div class="d-none d-md-none d-lg-block ml-auto">
           <form class="form-inline ml-0 ml-md-auto">
-          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-          <div class="dropdown">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
 
-            <a class="dropdown-toggle dropdown-avatar nav-icon " href="#" role="button" id="dropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-bell top-nav-icon"></i>
-            </a>
+            <!-- <div class="dropdown">
+
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownNotif"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell top-nav-icon"></i>
+              </a>
             
-            <a class="dropdown-toggle dropdown-avatar nav-icon " href="#" role="button" id="dropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-envelope top-nav-icon"></i>
-            </a>
-
-            <a class="dropdown-toggle dropdown-avatar nav-icon " href="#" role="button" id="dropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-shopping-cart top-nav-icon"></i>
-            </a>
-
-            <!-- <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-bell" class="text-gray-50"></i>
-            </a> -->
-
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">
-                <img src="../../assets/images/reg-printing.svg" alt="">
-                Printing Vendor
-              </a>
-              <a class="dropdown-item" href="#">
-                <img src="../../assets/images/reg-printing.svg" alt="">
-                Design Vendor
-              </a>
-              <a class="dropdown-item" href="#">Something else here</a>
             </div> -->
-          </div>
-          <!-- Activate User -->
+              
+            <!-- <div>
 
-          <div class="border-right ml-2 mr-3">&nbsp;</div>
-            <a href="">Aktivasi Bisnis</a>
-          <div class="border-right ml-2 mr-3">&nbsp;</div>
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownMessage"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope top-nav-icon"></i>
+              </a>
 
-          <!-- Profile and Dropdown -->
-          <div class="dropdown">
+            </div> -->
 
-            <!-- Registration and Login -->
-            <!-- <button class="btn btn-primary">Daftar</button>
-            <button class="btn btn-link"><i class="fa fa-sign-in-alt"></i> Masuk</button> -->
-            <!-- Registration and Login -->
-
-            <!-- Profile -->
-            <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar.jpg" alt="">
-              Palti Gorat
-            </a>
-            <!-- Profile -->
-
-            <!-- Dropdown -->
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div>
+              
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart top-nav-icon"></i>
+              </a>
+              
             </div>
-            <!-- Dropdown -->
+              
+            <!-- Activate User -->
 
-          </div>
-          <!-- Profile and Dropdown -->
+            <!-- <div class="border-right ml-2 mr-3">&nbsp;</div> -->
+            
+            <!-- Aktivasi Bisnis -->
+            <!-- <div class="dropdown">
+              <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink">Aktivasi Bisnis</a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">
+                  <img src="../../assets/images/reg-printing.svg" alt="">
+                  Printing Vendor
+                </a>
+                <a class="dropdown-item" href="#">
+                  <img src="../../assets/images/reg-printing.svg" alt="">
+                  Design Vendor
+                </a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div> -->
+
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+
+            <!-- Registration and Login -->
+            <div class="authentication-btn">
+              <button class="btn btn-primary signup">Daftar</button>
+              <button class="btn btn-link signin"><i class="fa fa-sign-in-alt"></i> Masuk</button>
+            </div>
+            <!-- Registration and Login -->
+
+            <!-- Profile and Dropdown -->
+            <div class="dropdown">
+
+              <!-- Profile -->
+              <!-- <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar_blank.svg" alt="">
+                <span>Muhammad Rizky Ferianda</span>
+              </a> -->
+              <!-- Dropdown -->
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+              <!-- Dropdown -->
+              <!-- Profile -->
+
+            </div>
+            <!-- Profile and Dropdown -->
 
         </form>
         </div>
@@ -102,8 +122,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         </div> -->
+        
       </nav>
     </div>
+    <div class="categories-holder">
+      <div class="container">
+        <div class="d-flex flex-row categories">
+          <a href="" class="show-all-cat"><i class="fas fa-bars" style="margin-right: 5spx;"></i> Semua Kategori</a>
+          <a href="#">Media Promosi</a>
+          <a href="#">Peralatan Kantor</a>
+          <a href="#">Kartu Nama</a>
+          <a href="#">Packaging</a>
+          <a href="#">Kartu Ucapan</a>
+          <a href="#">Design Grafis</a>
+        </div>
+      </div>
+    </div>
+    
   </header>
   <div class="container d-flex">
     <!-- || SIDEBAR -->
