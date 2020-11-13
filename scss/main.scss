@@ -3,6 +3,7 @@
 $gray-10 : #333333;
 $gray-40 : #838994; //NAV, LABEL
 $blue-50 : #2F80ED; //PRIMARY
+$gray-70 : #F8F8F8;
 
 $red-60 : #F5222D;
 
@@ -55,5 +56,5 @@ body{
 
 
 @import 'component.scss';
-
+@import 'nav-style.scss';
   
