@@ -24,8 +24,21 @@
 
   $("#backdrop").on("click", function(e){
     e.preventDefault();
-      $("#backdrop").css("display", "none");
+    if($("body").hasClass("sidenav-toggled")){
       $("body").toggleClass("sidenav-toggled");
+    }else 
+    if($('#bottom-dialog.bottom-dialog--toggled')){
+        $("#bottom-dialog").slideToggle('fast').toggleClass('bottom-dialog--toggled');
+    }
+      $("#backdrop").css("display", "none");
+
+    //   $("body").toggleClass("sidenav-toggled");
       
   })
+
+
+  $("#toggleBottomDialog").click(function () {
+    $("#bottom-dialog").slideToggle('fast').toggleClass('bottom-dialog--toggled');
+    $("#backdrop").css("display", "block");
+  });
 })(jQuery);
