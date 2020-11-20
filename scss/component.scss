@@ -3,6 +3,10 @@
 // Mobile First
 
 // || BUTTON
+.btn{
+  border-radius: 8px;
+  font-size: 14px;
+}
 .btn-sm-block{
   float: right;
   @media (max-width: 764px) {
@@ -205,13 +209,22 @@ aside {
 // || PAGE - CONTENT
 section.content, .content {
   // padding: 24px;
-  padding-top: 24px;
+  padding-top: .5rem;
   padding-bottom: 40px;
 
   .card {
     border-radius: 0;
     box-shadow: none;
 
+    .card-header{
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+  }
+
+  //SPECIAL CASE FOR DETAIL ORDER
+  .detail-order{
+    
   }
 
 
@@ -384,9 +397,17 @@ section.content, .content {
   th{
     border-top: 0;
   }
+
+  &.table--order{
+    img{
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+    }
+  }
 }
 
-// || IMG HOLDER
+// || IMAGE HOLDER
 .img-holder-medium{
   img{
     border-radius: 4px;
@@ -595,4 +616,228 @@ $input-border-color-active: $blue-50;
 // || ICON - SOCIAL
 .icon--social{
   font-size: 2rem;
+}
+
+// || TIMELINE
+.timeline-wrapper {
+  display: block;
+
+  .is-complete {}
+}
+
+.timeline {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    counter-increment: section;
+    position: relative;
+    // font-weight: 600;
+    white-space: nowrap;
+    overflow: visible;
+    min-width: 0;
+    text-align: center;
+    color: $blue-50;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    .description {
+      white-space: initial;
+      color: $gray-10;
+      text-align: left;
+      width: auto;
+      max-width: 200px;
+
+      .desc_time {
+        font-size: 12px;
+        color: $gray-40;
+      }
+    }
+
+    &:before {
+      content: '';
+      text-align: center;
+      color: white;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      background-color: $blue-50;
+      // background-color: transparent;
+      border-radius: 50%;
+      // border: 2px solid white;
+      z-index: 3;
+      transition: all .2s ease-in-out;
+    }
+  }
+
+  &.timeline-vertical {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding-inline-start: 0px;
+    }
+
+    li {
+      flex: 1;
+      padding: 0px;
+
+      .description {
+        position: absolute;
+        left: 15px;
+        top: -14px;
+        display: block;
+        padding: 10px 10px 10px 0;
+
+        .desc_title{
+          font-size: 14px;
+        }
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        height: 2rem;
+        border-left: 2px solid $blue-50;
+      }
+
+      &:first-child,
+      :last-child {
+        flex: 1;
+      }
+
+      &:first-child {
+        border: none;
+      }
+
+      &:last-child {
+        text-align: right;
+
+        &::after {
+          border: none;
+          height: 0px;
+        }
+
+        span {
+          width: 200%;
+          display: inline-block;
+          position: absolute;
+          left: -100%;
+        }
+      }
+
+      &:before {
+        position: relative;
+        left: -7px;
+        bottom: 0px;
+      }
+    }
+
+    span {
+      transition: opacity .3s ease-in-out;
+    }
+
+    .is-active {
+      &:not(:first-child):after {}
+
+      &:last-child {
+        &:after {
+          width: 200%;
+          left: -100%;
+        }
+      }
+
+      &::before {
+        // background-color: white;
+        // border-color: $red-500;
+      }
+
+      &~li {
+        &::before {
+          background-color:grey;
+        }
+
+        &::after {
+          border-left: 2px solid grey;
+        }
+
+        .description {
+          color:  grey;
+          .desc_time{
+            color:  grey;
+          }
+          .desc_title{
+            font-size: 10px;
+          }
+        }
+      }
+
+    }
+  }
+
+
+}
+
+.timeline--step{
+  color: $blue-50;
+  font-size: 14px;
+}
+
+.timeline--tittle{
+  font-weight: bolder;
+}
+
+.icon.chat-indicator{
+  font-size: 10px;
+
+  &-online{
+    color: mediumseagreen;
+  }
+  &-offline{
+    color: $gray-40;
+  }
+}
+
+.chat-box{
+  .chat-box-head{
+
+  }
+
+  .chat-box-body{
+    .single-chat{
+      background-color: $gray-60;
+      max-width: 300px;
+      padding: 10px;
+      margin: .7rem 0 .7rem 0 ;
+      
+      img{
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      &.single-chat-other{
+        border-radius: 16px 16px 16px 0;
+      }
+      &.single-chat-me{
+        margin-left: auto;
+        border-radius: 16px 16px 0px 16px;
+
+      }
+    }
+  }
+}
+
+// || MODAL - PORTFOLIO
+.modal{
+  .modal-portfolio{
+    .modal-body{
+      width: inherit;
+      img{
+        width: inherit;
+      }
+    }
+  }
 }
