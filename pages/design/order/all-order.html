@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Design-All-Produk</title>
+  <title>Design-All-Order</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../../scss/main.css">
@@ -96,7 +96,7 @@
               </a>
             </div>
             <div class="nav__item ">
-              <a class="nav-link active " data-toggle="collapse" href="#produkCollapse" role="button" aria-expanded="false"
+              <a class="nav-link" data-toggle="collapse" href="#produkCollapse" role="button" aria-expanded="false"
                 aria-controls="produkCollapse">
                 <i class="fas fa-archive mr-2"></i>
                 Produk
@@ -104,16 +104,16 @@
               </a>
             </div>
             <div class="collapse multi-collapse" id="produkCollapse">
-              <div class="nav__item ">
-                <a class="nav-link active" href="#">Semua Produk</a>
+              <div class="nav__item">
+                <a class="nav-link " href="#">Semua Produk</a>
               </div>
               <div class="nav__item">
                 <a class="nav-link" href="./new-produk.html">Tambah Produk</a>
 
               </div>
             </div>
-            <div class="nav__item">
-              <a class="nav-link " href="penjualan.html">
+            <div class="nav__item active">
+              <a class="nav-link active" href="penjualan.html">
                 <i class="fas fa-book mr-2"></i>
                 Penjualan</a>
             </div>
@@ -155,18 +155,20 @@
     <section class="w-100">
       <div class="content ">
         <div class="title">
-          <h2>Daftar Produk</h2>
-          <p>Atur dan kelola produk / jasa desainmu disini.</p>
+          <h2>Daftar Pesanan</h2>
+          <p>Lihat daftar pesananmu disini.</p>
         </div>
         <div class="card card--highlight w-100">
           <div class="card-body">
             <div class="d-flex justify-content-between">
-              <div class="filter-item-wrapper">
-                <a href="" class="mr-2">Semua Produk</a>
-                <a href="" class="mr-2">Aktif (4)</a>
-                <a href="">Nonaktif (1)</a>
+              <div class="filter-item-wrapper mb-2">
+                <a href="" class="mr-2">Semua Pesanan</a>
+                <a href="" class="mr-2">Pesanan Baru</a>
+                <a href="" class="mr-2">Revisi</a>
+                <a href="" class="mr-2">Pesanan Aktif</a>
+                <a href="" class="mr-2">Selesai</a>
+                <a href="" class="mr-2">Pembatalan</a>
               </div>
-              <div class="btn btn-primary d-none d-md-block d-lg-block ml-auto">Tambah Produk</div>
             </div>
             <div class="input-group input-search mt-2">
               <input type="text" class="form-control" placeholder="Cari Nama Produk" aria-label="Recipient's username"
@@ -177,171 +179,75 @@
                 </span>
               </div>
             </div>
+            <table class="table table-responsive-sm table-striped table--variant table--order w-100">
+              <thead>
+                <tr>
+                  <th scope="col">Produk</th>
+                  <th scope="col">Pembeli</th>
+                  <th scope="col">Tenggat Waktu</th>
+                  <th scope="col">Harga</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex flex-row align-items-center">
+                      <img class="mr-2" src="../../../assets/images/product-4.jpg" alt="">
+                      <div class="">
+                        <span class="text-secondary">INV/20200920/ABC</span>
+                        <span class="font-weight-bolder d-block">Design Poster</span>
+                        <span class="text-secondary">Fast</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Kang Sule</td>
+                  <td>20 November 2020</td>
+                  <td><h6 class="text-danger">Rp 55.000</h6></td>
+                  <td> <div class="badge badge-primary">Sedang Dikerjakan</div> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex flex-row align-items-center">
+                      <img class="mr-2" src="../../../assets/images/product-3.jpg" alt="">
+                      <div class="">
+                        <span class="text-secondary">INV/7661922/H9SA</span>
+                        <span class="font-weight-bolder d-block">Design Kartu Nama</span>
+                        <span class="text-secondary">REGULAR</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Ulfa Intania</td>
+                  <td>20 November 2020</td>
+                  <td><h6 class="text-danger">Rp 25.000</h6></td>
+                  <td> <div class="badge badge-success">Pesanan Baru</div> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex flex-row align-items-center">
+                      <img class="mr-2" src="../../../assets/images/product-5.jpg" alt="">
+                      <div class="">
+                        <span class="text-secondary">INV/7661922/H9SA</span>
+                        <span class="font-weight-bolder d-block">Design X-Banner</span>
+                        <span class="text-secondary">REGULAR</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Rizky Aja</td>
+                  <td>22 November 2020</td>
+                  <td><h6 class="text-danger">Rp 55.000</h6></td>
+                  <td> <div class="badge badge-success">Pesanan Baru</div> </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="card--list--wrapper mt-3">
-          <div class="row mt-3">
-            <!-- Single Product -->
-            <div class="col-6 col-md-4 col-lg-3 pb-3">
-              <div class="card--product">
-                <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
-                <div class="more-icon text-white">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle text-white d-block d-sm-block d-md-none" href="#" role="button"
-                      id="toggleBottomDialog">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <a class="dropdown-toggle text-white d-none d-md-block d-lg-block" href="#" role="button"
-                      id="dropdownMenuProductCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProductCard">
-                      <a class="dropdown-item" href="#">Preview</a>
-                      <a class="dropdown-item" href="#">Edit</a>
-                      <button type="button" class="dropdown-item" data-toggle="modal" data-target="#deleteModal">
-                        Hapus
-                      </button>
-                      <a role="button" class="dropdown-item" href="#" data-toggle="modal" data-target="#shareModal" >Bagikan</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card--product__body">
-                  <span> Desain Poster Segala Ukuran </span>
-                  <h5> Rp 50.000 </h5>
-                  <span class="badge badge-success">Aktif</span>
-                </div>
-              </div>
-            </div>
-            <!-- Single Product -->
-            <div class="col-6 col-md-4 col-lg-3 pb-3">
-              <div class="card--product">
-                <img src="../../../assets/images/product-2.jpg" class="card-img-top" alt="...">
-                <div class="more-icon text-white">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle text-white d-block d-sm-block d-md-none" href="#" role="button"
-                      id="toggleBottomDialog">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <a class="dropdown-toggle text-white d-none d-md-block d-lg-block" href="#" role="button"
-                      id="dropdownMenuProductCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProductCard">
-                      <a class="dropdown-item" href="#">Preview</a>
-                      <a class="dropdown-item" href="#">Edit</a>
-                      <button type="button" class="dropdown-item" data-toggle="modal" data-target="#deleteModal">
-                        Hapus
-                      </button>
-                      <a class="dropdown-item" href="#">Bagikan</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card--product__body">
-                  <span> Desain Kartu Nama </span>
-                  <h5> Rp 20.000 </h5>
-                  <span class="badge badge-success">Aktif</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 pb-3">
-              <div class="card--product">
-                <img src="../../../assets/images/product-4.jpg" class="card-img-top" alt="...">
-                <div class="more-icon text-white">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle text-white d-block d-sm-block d-md-none" href="#" role="button"
-                      id="toggleBottomDialog">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <a class="dropdown-toggle text-white d-none d-md-block d-lg-block" href="#" role="button"
-                      id="dropdownMenuProductCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProductCard">
-                      <a class="dropdown-item" href="#">Preview</a>
-                      <a class="dropdown-item" href="#">Edit</a>
-                      <button type="button" class="dropdown-item" data-toggle="modal" data-target="#deleteModal">
-                        Hapus
-                      </button>
-                      <a class="dropdown-item" href="#">Bagikan</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card--product__body">
-                  <span> Desain Mug  </span>
-                  <h5> Rp 40.000 </h5>
-                  <span class="badge badge-success">Aktif</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 pb-3">
-              <div class="card--product">
-                <img src="../../../assets/images/product-5.jpg" class="card-img-top" alt="...">
-                <div class="more-icon text-white">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle text-white d-block d-sm-block d-md-none" href="#" role="button"
-                      id="toggleBottomDialog">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <a class="dropdown-toggle text-white d-none d-md-block d-lg-block" href="#" role="button"
-                      id="dropdownMenuProductCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProductCard">
-                      <a class="dropdown-item" href="#">Preview</a>
-                      <a class="dropdown-item" href="#">Edit</a>
-                      <button type="button" class="dropdown-item" data-toggle="modal" data-target="#deleteModal">
-                        Hapus
-                      </button>
-                      <a class="dropdown-item" href="#">Bagikan</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card--product__body">
-                  <span> Desain Segala Jenis Banner </span>
-                  <h5> Rp 50.000 </h5>
-                  <span class="badge badge-success">Aktif</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 pb-3">
-              <div class="card--product">
-                <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
-                <div class="more-icon text-white">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle text-white d-block d-sm-block d-md-none" href="#" role="button"
-                      id="toggleBottomDialog">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <a class="dropdown-toggle text-white d-none d-md-block d-lg-block" href="#" role="button"
-                      id="dropdownMenuProductCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProductCard">
-                      <a class="dropdown-item" href="#">Preview</a>
-                      <a class="dropdown-item" href="#">Edit</a>
-                      <button type="button" class="dropdown-item" data-toggle="modal" data-target="#deleteModal">
-                        Hapus
-                      </button>
-                      <a class="dropdown-item" href="#">Bagikan</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card--product__body">
-                  <span> Desain Packaging Makanan </span>
-                  <h5> Rp 50.000 </h5>
-                  <span class="badge badge-secondary">Nonaktif</span>
-                </div>
-              </div>
-            </div>
 
-          </div>
-        </div>
+        
       </div>
 
     </section>
     <!-- || CONTENT END -->
-
-
   </div>
   <footer>
 
@@ -365,7 +271,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm">
       <div class="modal-content">

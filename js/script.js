@@ -1,44 +1,42 @@
 //Active link
 //Sidebar toggle
 
-(function($) {
+(function ($) {
   "use strict";
 
   // Add active state to sidbar nav links
   var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
   console.log(path)
-      $("#sideBar .sidebar__menu a.nav-link").each(function() {
-          if (this.href === path) {
-              $(this).addClass("active");
-          }
-      });
-
-      // $('$sideBar .sidbar__menu a.nav-link:has()')
-
-  // Toggle the side navigation
-  $("#sidebarToggle").on("click", function(e) {
-      e.preventDefault();
-      $("body").toggleClass("sidenav-toggled");
-      $("#backdrop").css("display", "block");
+  $("#sideBar .sidebar__menu a.nav-link").each(function () {
+    if (this.href === path) {
+      $(this).addClass("active");
+    }
   });
 
-  $("#backdrop").on("click", function(e){
+  // Toggle the side navigation
+  $("#sidebarToggle").on("click", function (e) {
     e.preventDefault();
-    if($("body").hasClass("sidenav-toggled")){
-      $("body").toggleClass("sidenav-toggled");
-    }else 
-    if($('#bottom-dialog.bottom-dialog--toggled')){
-        $("#bottom-dialog").slideToggle('fast').toggleClass('bottom-dialog--toggled');
-    }
-      $("#backdrop").css("display", "none");
+    $("body").toggleClass("sidenav-toggled");
+    $("#backdrop").css("display", "block");
+  });
 
-    //   $("body").toggleClass("sidenav-toggled");
-      
+  $("#backdrop").on("click", function (e) {
+    e.preventDefault();
+    if ($("body").hasClass("sidenav-toggled")) {
+      $("body").toggleClass("sidenav-toggled");
+      console.log('a')
+    } else if ($("body").hasClass("bottom-dialog--toggled")) {
+      $("body").toggleClass("bottom-dialog--toggled");
+      $("#bottom-dialog").slideToggle('fast');
+      console.log('bc')
+    } 
+    $("#backdrop").css("display", "none");
   })
 
-
-  $("#toggleBottomDialog").click(function () {
-    $("#bottom-dialog").slideToggle('fast').toggleClass('bottom-dialog--toggled');
+  $("#toggleBottomDialog").click(function (e) {
+    e.preventDefault();
+    $("#bottom-dialog").slideToggle('fast');
+    $("body").toggleClass("bottom-dialog--toggled");
     $("#backdrop").css("display", "block");
   });
 })(jQuery);

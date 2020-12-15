@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Design-Dashboard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../scss/main.css">
+  <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-sm px-0 px-md-2 ">
+      <nav class="navbar navbar-expand-lg w-100">
+        <a class="navbar-brand" href="#">
+          <img src="../../assets/images/Logo.svg" alt="">
+        </a>
+        <div class="d-block d-sm-block d-md-none">
+          <i class="fas fa-bars" id="sidebarToggle"></i>
+        </div>
+        <div class="d-none d-md-block d-lg-block ml-auto">
+          <form class="form-inline ml-0 ml-md-auto">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-store-alt" class="text-gray-50"></i>
+              </a>
+              <div class="dropdown-menu register--vendor text-center p-0" aria-labelledby="dropdownMenuLink">
+                <div class="d-flex" href="#">
+                  <a href="" class="p-2">
+                    <img src="../../assets/images/reg-printing.svg" alt="">
+                    <div>Printing Vendor</div>
+                  </a>
+                  <a href="" class="p-2">
+                    <img src="../../assets/images/reg-designer.svg" alt="">
+                    <div> Design Vendor </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar.jpg" alt="">
+                Palti Gorat
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container-md px-0 px-md-2 d-flex">
+
+    <!-- || CONTENT -->
+    <section class=" m-auto">
+      <div class="card mt-4">
+        <div class="card-body py-5">
+          <div class="text-center d-flex flex-column">
+            <!-- <div class="" id="status">
+              <img src="../../../assets/images/quality_check 2.svg" style="height: 100px;" class="" alt=""> <br>
+              Status Pendaftaran :
+              <h5 class="text-primary my-3">Menunggu Verifikasi</h5>
+              <span>Verifikasi dokumen akan dilakukan dalam 2*24 jam. Hasil verifikasi akan dikirimkan melalui email dan
+                notifikasi dari Printaneka.</span>
+              <br>
+            </div> -->
+            <!-- <div class="" id="status">
+              <img src="../../../assets/images/job_interview__two_color 2.svg" style="height: 100px;" class="" alt=""><br>
+              Status Pendaftaran :
+              <h5 class="text-primary my-4">Onsite Approval</h5>
+              <span>Hasil verifikasi kunjungan langsung ke tempat usaha mu akan dikirimkan melalui email dan notifikasi. Maksimal 3 hari kerja dari tanggal yang telah ditetapkan</span>
+              <br>
+            </div> -->
+            <div class="" id="status">
+              <img src="../../../assets/images/success_ 2.svg" style="height: 100px;" class="" alt=""><br>
+              Status Pendaftaran :
+              <h5 class="text-primary my-4">Yeyy, Toko berhasil dibuat!!</h5>
+              <span>Akhirnya toko kamu resmi jadi printing vendor di PrintanekaAyo tambah layanan dan mulai usahamu.</span>
+              <br>
+            </div>
+            <div class="timeline timeline-vertical timeline-primary mt-3 ml-3 text-nowrap">
+              <ul>
+                <li>
+                  <div class="description">
+                    <div class="desc_title">Pesanan Dikonfirmasi</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="description">
+                    <div class="desc_title">Pesanan Diporses</div>
+                  </div>
+                </li>
+                <li class="active">
+                  <div class="description">
+                    <div class="desc_title">Pesanan Dikirim</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="description">
+                    <div class="desc_title">Pesanan Selesai</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <br>
+            <button class="btn btn-primary mt-3"> Mulai Berjualan </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- || CONTENT END -->
+
+
+  </div>
+  <footer>
+
+  </footer>
+  <div class="backdrop-black" id="backdrop"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

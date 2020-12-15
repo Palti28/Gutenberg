@@ -172,7 +172,10 @@ table{
     img{
         width: 100%;
     }
-    a{text-decoration: none; color: $gray-20;}
+    a{
+        text-decoration: none; 
+        //color: $gray-20;
+    }
     .prod-offer{
         position: relative;
         padding: 1rem;
@@ -185,7 +188,7 @@ table{
             max-height: 48px;
             line-height: 16px;
             font-weight: 400;
-            color: $gray-20;
+            //color: $gray-20;
             font-style: normal;
 
             text-overflow: ellipsis; 
