@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Printaneka - Online Printing Network</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../scss/main.css">
+  <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
+
+  <style>
+      .stretch-card{
+          padding-left: 8px;
+          padding-right: 8px;
+      }
+  </style>
+</head>
+
+<body>
+  <header class="cust">
+    
+    <div class="container-sm px-0 px-md-2 ">
+      
+      <nav class="navbar navbar-expand-lg w-100">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="../../assets/images/Logo.svg" alt="">
+        </a>
+        
+        <!-- Search box -->
+        <div class="input-group search-box">
+          <input type="text" class="form-control" placeholder="Temukan kebutuhanmu disini" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <a href="result.html" class="btn btn-secondary" type="button">Cari</a>
+          </div>
+        </div>
+        <!-- Search box -->
+        
+        <!-- Toggle for mobile -->
+        <div class="d-block d-sm-block d-md-none">
+          <i class="fas fa-bars" id="sidebarToggle"></i>
+        </div>
+        <!-- Toggle for mobile -->
+        
+        <div class="d-none d-md-block d-lg-block ml-auto">
+          
+          <form class="form-inline ml-0 ml-md-auto">
+
+            <!-- Single Icon -->
+            <div class="single-icon">
+              
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope top-nav-icon"></i>
+              </a>
+              
+            </div>
+            
+            <div class="single-icon">
+              
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell top-nav-icon"></i>
+              </a>
+              
+            </div>
+
+            <div class="single-icon">
+              
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart top-nav-icon"></i>
+              </a>
+              
+            </div>
+            <!-- Single Icon -->
+            
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+
+            <!-- Business Activation -->
+            <div class="dropdown business-text">
+              
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="fas fa-bell" class="text-gray-50"></i> -->
+                Aktifkan Bisnismu
+              </a>
+
+              <div class="dropdown-menu register--vendor text-center p-0 dropdown-business" aria-labelledby="dropdownMenuLink">
+                <div class="d-flex" href="#">
+                  <a href="" class="p-2">
+                    <img src="../../assets/images/reg-printing.svg" alt="">
+                    <div>Printing Vendor</div>
+                  </a>
+                  <a href="" class="p-2">
+                    <img src="../../assets/images/reg-designer.svg" alt="">
+                    <div> Design Vendor </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <!-- Business Activation -->
+            
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+            
+            <!-- User Profile  -->
+            <div class="dropdown">
+              
+              <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar_blank.svg" alt="">
+                <span>Muhammad Rizky Ferianda</span>
+              </a>
+              
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+
+            </div>
+            <!-- User Profile  -->
+            
+          </form>
+        </div>
+
+      </nav>
+
+    </div>
+
+    <div class="category">
+      <div class="container-sm px-0 px-md-2">
+      
+        <nav class="navbar navbar-expand-lg w-100">
+          
+          <div class="list">
+            <a href="#" class="all-cat">
+              <i class="fas fa-bars"></i> Semua Kategori
+            </a>
+            <a href="#">Promotional Item</a>
+            <a href="#">Merchandise</a>
+            <a href="#">Architectural & Interior</a>
+            <a href="#">Packaging</a>
+            <a href="#">Stationary</a>
+            <a href="#">Desain Grafis</a>
+          </div>
+  
+        </nav>
+  
+      </div>
+    </div>
+
+  </header>
+
+  <div class="container-md px-0 px-md-2 d-flex">
+    
+    <!-- || SIDEBAR -->
+    <!-- <aside>
+      <nav class="sidebar" id="sideBar">
+        <div class="sidebar__header d-flex flex-column justify-content-center text-center">
+          <div class="d-flex justify-content-center">
+            <img class="avatar avatar-md" src="../../assets/images/dummy_avatar.jpg" alt="">
+          </div>
+          <h5 id="vendorName" class="mt-2">Muhammad Rizky Ferianda</h5>
+          
+          <hr>
+        </div>
+        <div class="sidebar__menu">
+          <div class="nav">
+            <div class="nav__item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-tachometer-alt mr-2"></i>
+                Dashboard
+              </a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " data-toggle="collapse" href="#produkCollapse" role="button" aria-expanded="false"
+                aria-controls="produkCollapse">
+                <i class="fas fa-archive mr-2"></i>
+                Produk
+                <i class="fas fa-chevron-right ml-auto nav-link__arrow-icon"></i>
+              </a>
+            </div>
+            <div class="collapse multi-collapse" id="produkCollapse">
+              <div class="nav__item">
+                <a class="nav-link" href="./produk/all-produk.html">Semua Produk</a>
+              </div>
+              <div class="nav__item">
+                <a class="nav-link" href="./produk/new-produk.html">Tambah Produk</a>
+
+              </div>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="penjualan.html">
+                <i class="fas fa-book mr-2"></i>
+                Penjualan</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="keuangan.html">
+                <i class="far fa-file-alt mr-2"></i>
+                Keuangan</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="chat.html">
+                <i class="fas fa-comment-dots mr-2"></i>
+                Chat</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " data-toggle="collapse" href="#tokoCollapse" role="button" aria-expanded="false"
+                aria-controls="tokoCollapse">
+                <i class="fas fa-store mr-2"></i>
+
+                Toko
+                <i class="fas fa-chevron-right ml-auto nav-link__arrow-icon"></i>
+              </a>
+            </div>
+            <div class="collapse multi-collapse" id="tokoCollapse">
+              <div class="nav__item">
+                <a class="nav-link" href="toko/profile.html">Profile Toko</a>
+              </div>
+              <div class="nav__item">
+                <a class="nav-link" href="toko/rating.html">Rating Toko</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </aside> -->
+    <!-- || SIDEBAR END  -->
+
+    <!-- || CONTENT -->
+    <section class="w-100">
+      <div class="content landing-page">
+      
+        <main class="page-content">
+          <div class="container-fluid mt-3">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row grid-row">
+
+                  <div class="col-md-12">
+                    <div class="row">
+                      
+                      <!-- BAGIAN UPLOAD -->
+                      <div class="col-12 stretch-card upload-area">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title-text">
+                                Upload Design - Bungkus Makanan Kertas Berkualitas 
+                            </h4>
+                            <hr>
+                            <div class="upload-field">
+                              <div class="choose-file">
+                                <div class="d-flex align-items-start">
+                                  <input type="radio" name="select-upload" onclick="javascript:uploadCheck();" id="fileCheck"> 
+                                  <span class="upload-label">
+                                    <p>Unggah File Desain</p>
+                                    <ul>
+                                      <li>Format file yang diterima JPG, PDF, PNG, atau TIFF</li>
+                                      <li>Ukuran file maksimal 10 MB</li>
+                                      <li>Untuk pengiriman file lebih dari 1, harapkan menggunakan file .zip</li>
+                                    </ul>
+                                  </span>
+                                </div>
+                                <div class="d-flex justify-content-center file-upload">
+                                  <div class="drop-zone">
+                                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="by-link"></div>
+                            </div>
+                            <!-- <br> -->
+                            <div class="upload-field">
+                              <div class="choose-file">
+                                <div class="d-flex align-items-start">
+                                  <input type="radio" name="select-upload" onclick="javascript:uploadCheck();" id="linkCheck"> 
+                                  <span class="upload-label">
+                                    <p>Menggunakan link (untuk desain yang memiliki size besar dari 10 MB)</p>
+                                  </span>
+                                </div>
+                                <div class="by-link " id="ifLink" style="display: none;">
+                                  <input type="text" class="form-control" name="" id="">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <br> -->
+                            <div class="upload-field">
+                              <div class="choose-file">
+                                <div class="d-flex align-items-start">
+                                  <span class="info-label">
+                                    Belum punya desain? <a href="#">Pilih layanan terbaik dari desainer disini</a>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="by-link"></div>
+                            </div>
+                            <!-- <br> -->
+                            <div class="guide-label">
+                              <a href="#">Lihat panduan desain dan cetak</a>
+                            </div>
+                            <div class="upload-action">
+                              <button type="button" class="btn btn-outline-secondary">Upload Ulang</button>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Simpan</button>
+                            </div>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade confirmation-alert" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Konfirmasi</h5>
+                                  </div>
+                                  <div class="modal-body">
+                                    Perhatikan poin poin dibawah ini sebelum melanjutkan:
+                                    <ul>
+                                      <li>Pastikan desain kamu sudah benar dan sesuai</li>
+                                      <li>Setiap gambar yang digunakan sudah sesuai dengan hak cipta / copyright yang berlaku</li>
+                                      <li>Informasi yang ditampilkan pada kartu nama sudah benar dan sesuai</li>
+                                      <li>Saya akan mendapatkan jumlah sesuai pesanan (1000 lembar)</li>
+                                    </ul>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batalkan</button>
+                                    <button type="button" class="btn btn-primary">Masukan ke keranjang</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                      </div>
+                      <!-- BAGIAN UPLOAD -->
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+        
+      </div>
+    </section>
+    <!-- || CONTENT END -->
+
+
+  </div>
+  <footer>
+
+  </footer>
+
+  <div class="backdrop-black" id="backdrop"></div>
+  <script src="../../js/upload-field.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="../../js/script.js"></script>
+  <script>
+    function uploadCheck() {
+      if (document.getElementById('linkCheck').checked) {
+          document.getElementById('ifLink').style.display = 'block';
+      }
+      else document.getElementById('ifLink').style.display = 'none';
+    }
+  </script>
+
+</body>
+
+</html>

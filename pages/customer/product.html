@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Printaneka - Online Printing Network</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../scss/main.css">
+  <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
+
+  <style>
+      .stretch-card{
+          padding-left: 8px;
+          padding-right: 8px;
+      }
+  </style>
+</head>
+
+<body>
+  <header class="cust">
+    
+    <div class="container-sm px-0 px-md-2 ">
+      
+      <nav class="navbar navbar-expand-lg w-100">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="../../assets/images/Logo.svg" alt="">
+        </a>
+        
+        <!-- Search box -->
+        <div class="input-group search-box">
+          <input type="text" class="form-control" placeholder="Temukan kebutuhanmu disini" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <a href="result.html" class="btn btn-secondary" type="button">Cari</a>
+          </div>
+        </div>
+        <!-- Search box -->
+        
+        <!-- Toggle for mobile -->
+        <div class="d-block d-sm-block d-md-none">
+          <i class="fas fa-bars" id="sidebarToggle"></i>
+        </div>
+        <!-- Toggle for mobile -->
+        
+        <div class="d-none d-md-block d-lg-block ml-auto">
+          
+          <form class="form-inline ml-0 ml-md-auto">
+
+            <!-- Single Icon -->
+            <div class="single-icon">
+              
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope top-nav-icon"></i>
+              </a>
+              
+            </div>
+            
+            <div class="single-icon">
+              
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell top-nav-icon"></i>
+              </a>
+              
+            </div>
+
+            <div class="single-icon">
+              
+              <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart top-nav-icon"></i>
+              </a>
+              
+            </div>
+            <!-- Single Icon -->
+            
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+
+            <!-- Business Activation -->
+            <div class="dropdown business-text">
+              
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="fas fa-bell" class="text-gray-50"></i> -->
+                Aktifkan Bisnismu
+              </a>
+
+              <div class="dropdown-menu register--vendor text-center p-0 dropdown-business" aria-labelledby="dropdownMenuLink">
+                <div class="d-flex" href="#">
+                  <a href="" class="p-2">
+                    <img src="../../assets/images/reg-printing.svg" alt="">
+                    <div>Printing Vendor</div>
+                  </a>
+                  <a href="" class="p-2">
+                    <img src="../../assets/images/reg-designer.svg" alt="">
+                    <div> Design Vendor </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <!-- Business Activation -->
+            
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+            
+            <!-- User Profile  -->
+            <div class="dropdown">
+              
+              <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar_blank.svg" alt="">
+                <span>Muhammad Rizky Ferianda</span>
+              </a>
+              
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+
+            </div>
+            <!-- User Profile  -->
+            
+          </form>
+        </div>
+
+      </nav>
+
+    </div>
+
+    <div class="category">
+      <div class="container-sm px-0 px-md-2">
+      
+        <nav class="navbar navbar-expand-lg w-100">
+          
+          <div class="list">
+            <a href="#" class="all-cat">
+              <i class="fas fa-bars"></i> Semua Kategori
+            </a>
+            <a href="#">Promotional Item</a>
+            <a href="#">Merchandise</a>
+            <a href="#">Architectural & Interior</a>
+            <a href="#">Packaging</a>
+            <a href="#">Stationary</a>
+            <a href="#">Desain Grafis</a>
+          </div>
+  
+        </nav>
+  
+      </div>
+    </div>
+
+  </header>
+
+  <div class="container-md px-0 px-md-2 d-flex">
+    
+    <!-- || SIDEBAR -->
+    <!-- <aside>
+      <nav class="sidebar" id="sideBar">
+        <div class="sidebar__header d-flex flex-column justify-content-center text-center">
+          <div class="d-flex justify-content-center">
+            <img class="avatar avatar-md" src="../../assets/images/dummy_avatar.jpg" alt="">
+          </div>
+          <h5 id="vendorName" class="mt-2">Muhammad Rizky Ferianda</h5>
+          
+          <hr>
+        </div>
+        <div class="sidebar__menu">
+          <div class="nav">
+            <div class="nav__item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-tachometer-alt mr-2"></i>
+                Dashboard
+              </a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " data-toggle="collapse" href="#produkCollapse" role="button" aria-expanded="false"
+                aria-controls="produkCollapse">
+                <i class="fas fa-archive mr-2"></i>
+                Produk
+                <i class="fas fa-chevron-right ml-auto nav-link__arrow-icon"></i>
+              </a>
+            </div>
+            <div class="collapse multi-collapse" id="produkCollapse">
+              <div class="nav__item">
+                <a class="nav-link" href="./produk/all-produk.html">Semua Produk</a>
+              </div>
+              <div class="nav__item">
+                <a class="nav-link" href="./produk/new-produk.html">Tambah Produk</a>
+
+              </div>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="penjualan.html">
+                <i class="fas fa-book mr-2"></i>
+                Penjualan</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="keuangan.html">
+                <i class="far fa-file-alt mr-2"></i>
+                Keuangan</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " href="chat.html">
+                <i class="fas fa-comment-dots mr-2"></i>
+                Chat</a>
+            </div>
+            <div class="nav__item">
+              <a class="nav-link " data-toggle="collapse" href="#tokoCollapse" role="button" aria-expanded="false"
+                aria-controls="tokoCollapse">
+                <i class="fas fa-store mr-2"></i>
+
+                Toko
+                <i class="fas fa-chevron-right ml-auto nav-link__arrow-icon"></i>
+              </a>
+            </div>
+            <div class="collapse multi-collapse" id="tokoCollapse">
+              <div class="nav__item">
+                <a class="nav-link" href="toko/profile.html">Profile Toko</a>
+              </div>
+              <div class="nav__item">
+                <a class="nav-link" href="toko/rating.html">Rating Toko</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </aside> -->
+    <!-- || SIDEBAR END  -->
+
+    <!-- || CONTENT -->
+    <section class="w-100">
+      <div class="content landing-page">
+      
+        <main class="page-content">
+          <div class="container-fluid mt-3">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row grid-row">
+
+                  <div class="col-md-7">
+                    <div class="row">
+                      
+                      <div class="col-12 stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <img src="../../assets/images/customer/paperbag_satu.png" alt="">
+                            <div class="d-flex justify-content-start social">
+                              <span>Bagikan</span>
+                              <div class="d-flex justify-content-start icon">
+                                <img src="../../assets/images/social/fb.png" alt="">
+                                <img src="../../assets/images/social/tw.png" alt="">
+                                <img src="../../assets/images/social/gm.png" alt="">
+                                <img src="../../assets/images/social/lk.png" alt="">
+                              </div>
+                            </div>
+                            <hr>
+
+                            <!-- BAGIAN INFORMASI -->
+                            <div class="product-column">
+                              <div class="product-info">
+                                <h3 class="medium-text">
+                                  Bungkus Makanan Kertas Berkualitas
+                                </h3>
+                                <a href="#review">
+                                  <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="rev-count">(120)</span>
+                                    <i class="fas fa-circle dot"></i>
+                                    <span class="rev-count">Dipesan 120x</span>
+                                  </div>
+                                </a>
+                                <div class="price">
+                                  <span>Mulai dari</span>
+                                  <div class="number d-flex justify-content-start">
+                                    <h3 class="big-text">
+                                      Rp 1200<span> / Lembar</span>
+                                    </h3>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- BAGIAN INFORMASI -->
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- BAGIAN SPESIFIKASI DAN DESKRIPSI -->
+                      <div class="col-12 stretch-card service-desc">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title-text">
+                              Informasi Layanan
+                            </h4>
+                            <hr>
+                            <div class="service-spesifikasi">
+                              <span class="title-text">Spesifikasi</span>
+                              <table>
+                                <tr>
+                                  <td>Kategori</td>
+                                  <td>:</td>
+                                  <td>Packaging</td>
+                                </tr>
+                                <tr>
+                                  <td>Jenis Bahan</td>
+                                  <td>:</td>
+                                  <td>Blues White (BW) 250gsm</td>
+                                </tr>
+                                <tr>
+                                  <td>Ukuran Produk</td>
+                                  <td>:</td>
+                                  <td>9,0 x 5,5 cm</td>
+                                </tr>
+                                <tr>
+                                  <td>Jumlah Sisi</td>
+                                  <td>:</td>
+                                  <td>1 Sisi</td>
+                                </tr>
+                                <tr>
+                                  <td>Tipe Sudut</td>
+                                  <td>:</td>
+                                  <td>Sudut Lancip</td>
+                                </tr>
+                              </table>
+                              <span class="title-text">Deskripsi</span>
+                              <p class="mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- BAGIAN SPESIFIKASI DAN DESKRIPSI -->
+
+                      <!-- BAGIAN TOKO -->
+                      <div class="col-12 stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex">
+                              <div class="store-img"></div>
+                              <div class="store-info">
+                                <div class="store-name">Nu Normal Printing Shop</div>
+                                <div class="store-loc">Jakarta Selatan - Online 2 menit yang lalu</div>
+                              </div>
+                              <div class="ml-auto pt-1">
+                                <button class="btn btn-outline-primary"><i class="far fa-comment-alt"></i> Chat</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- BAGIAN TOKO -->
+
+                      <!-- BAGIAN ULASAN -->
+                      <div class="col-12 stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title-text">
+                              Ulasan Pelanggan
+                            </h4>
+                            <hr>
+                            <div>
+                              <span class="big-numb">4.0</span><span> dari 5</span>
+                            </div>
+                            <div class="rating">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="rev-count">(120)</span>
+                            </div>
+                            <div class="review-grouping">
+                              <button type="button" class="btn btn-outline-primary user-star">Semua</button>
+                              <button type="button" class="btn btn-outline-secondary user-star">5 Bintang (100)</button>
+                              <button type="button" class="btn btn-outline-secondary user-star">4 Bintang (10)</button>
+                              <button type="button" class="btn btn-outline-secondary user-star">3 Bintang (5)</button>
+                              <button type="button" class="btn btn-outline-secondary user-star">2 Bintang (0)</button>
+                              <button type="button" class="btn btn-outline-secondary user-star">1 Bintang (0)</button>
+                            </div>
+                            <hr>
+                            <div class="review">
+                              <h3 class="service-review-title">Hasil cetak memuaskan</h3>
+                              <div class="d-flex justify-content-start customer">
+                                <span class="customer-name">Mike Okecoy</span>
+                                <div class="rating customer-choice">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                </div>
+                              </div>
+                              <div class="cutomer-review">
+                                Kualitas warna, kertas, tinta, dan cetakan sangan bagus. Bahkan tahan terhadap api, baik itu api kompor ataupun api asmara
+                              </div>
+                              <div class="d-flex review-vote">
+                                <div class="up-vote">
+                                  <i class="fas fa-thumbs-up active"></i> Membantu
+                                </div>
+                                <div class="down-vote">
+                                  <i class="fas fa-thumbs-down"></i> Tidak Membantu
+                                </div>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="review">
+                              <h3 class="service-review-title">Tidak mengecewakan, mantaap!</h3>
+                              <div class="d-flex justify-content-start customer">
+                                <span class="customer-name">Erin Herwitz</span>
+                                <div class="rating customer-choice">
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                </div>
+                              </div>
+                              <div class="cutomer-review">
+                                Kualitas warna, kertas, tinta, dan cetakan sangan bagus. Bahkan tahan terhadap api
+                              </div>
+                              <div class="d-flex review-vote">
+                                <div class="up-vote">
+                                  <i class="fas fa-thumbs-up"></i> Membantu
+                                </div>
+                                <div class="down-vote">
+                                  <i class="fas fa-thumbs-down"></i> Tidak Membantu
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <!-- BAGIAN ULASAN -->
+
+                    </div>
+                  </div>
+
+                  <!-- BAGIAN INPUT SPESIFIKASI -->
+                  <div class="col-12 col-md-5 stretch-card">
+                    <div class="card bg-gradient-yellow">
+                      <div class="card-body">
+                        <h4 class="card-title-text">
+                          Spesifikasi Pilihan
+                        </h4>
+                        <p class="caption">Pilih dan tentukan spesifikasi yang kamu inginkan</p>
+                        <hr>
+
+                        <div class="form-group">
+                          <label for="materialSelect">Material</label>
+                          <select class="form-control spec-input" id="materialSelect">
+                            <option>Pilih jenis material</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="sizeSelect">Ukuran Produk</label>
+                          <select class="form-control spec-input" id="sizeSelect">
+                            <option>Pilih ukuran produk</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="colorSelect">Warna Cetak</label>
+                          <select class="form-control spec-input" id="colorSelect">
+                            <option>Pilih warna cetak</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="quantSelect">Kuantitas</label>
+                          <select class="form-control spec-input" id="quantSelect">
+                            <option>Pilih kuantitas cetak</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+
+                        <div class="number d-flex justify-content-end total-price">
+                          <h3>
+                            <span style="font-size: 14px; font-weight: 500;">Total </span>Rp 1.200.000
+                          </h3>
+                          
+                        </div>
+
+                        <a href="detail.html">
+                          <button type="button" class="btn btn-primary cta-button">Lanjutkan</button>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- BAGIAN INPUT SPESIFIKASI -->
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+        
+
+        <!-- <div class="card--list--wrapper mt-3">
+          <div class="row mt-3">
+            
+            <div class="col-12 col-md-12">
+              
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+    <!-- || CONTENT END -->
+
+
+  </div>
+  <footer>
+
+  </footer>
+  <div class="backdrop-black" id="backdrop"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="../../js/script.js"></script>
+
+
+</body>
+
+</html>
