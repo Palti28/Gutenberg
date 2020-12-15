@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="../../scss/main.css">
   <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+  <style>
+      .stretch-card{
+          padding-left: 8px;
+          padding-right: 8px;
+      }
+  </style>
 </head>
 
 <body>
@@ -22,7 +25,7 @@
       
       <nav class="navbar navbar-expand-lg w-100">
         
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="../../assets/images/Logo.svg" alt="">
         </a>
         
@@ -46,23 +49,23 @@
           <form class="form-inline ml-0 ml-md-auto">
 
             <!-- Single Icon -->
-            <!-- <div class="single-icon">
+            <div class="single-icon">
               
               <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope top-nav-icon"></i>
               </a>
               
-            </div> -->
+            </div>
             
-            <!-- <div class="single-icon">
+            <div class="single-icon">
               
               <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell top-nav-icon"></i>
               </a>
               
-            </div> -->
+            </div>
 
             <div class="single-icon">
               
@@ -104,12 +107,12 @@
             
             <!-- User Profile  -->
             <div class="dropdown">
-              <a href="" data-toggle="modal" data-target="#loginModal"><i class="fas fa-sign-in-alt"></i> Masuk</a>
-              <!-- <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+              
+              <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar_blank.svg" alt="">
                 <span>Muhammad Rizky Ferianda</span>
-              </a> -->
+              </a>
               
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#">Action</a>
@@ -125,29 +128,6 @@
 
       </nav>
 
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade confirmation-alert authentication-login" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <!-- <img src="../../assets/images/Logo.svg" alt=""><br>
-        <h5 class="modal-title auth-title">Masuk</h5> -->
-          <div class="modal-body">
-            Perhatikan poin poin dibawah ini sebelum melanjutkan:
-            <ul>
-              <li>Pastikan desain kamu sudah benar dan sesuai</li>
-              <li>Setiap gambar yang digunakan sudah sesuai dengan hak cipta / copyright yang berlaku</li>
-              <li>Informasi yang ditampilkan pada kartu nama sudah benar dan sesuai</li>
-              <li>Saya akan mendapatkan jumlah sesuai pesanan (1000 lembar)</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batalkan</button>
-            <button type="button" class="btn btn-primary">Masukan ke keranjang</button>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="category">
@@ -254,38 +234,178 @@
     <!-- || CONTENT -->
     <section class="w-100">
       <div class="content landing-page">
+      
+        <main class="page-content">
+          <div class="container-fluid mt-3">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row grid-row">
+
+                  <div class="col-md-7">
+                    <div class="row">
+                      
+                      <!-- BAGIAN SPESIFIKASI DAN DESKRIPSI -->
+                      <div class="col-12 stretch-card service-desc">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title-text">
+                                Rincian Pengerjaan
+                            </h4>
+                            <p class="caption">Pastikan semua sudah sesuai dengan apa yang kamu inginkan ya</p>
+                            <hr>
+                            <div class="service-spesifikasi">
+                              <div class="d-flex preview">
+                                <img src="../../assets/images/customer/paperbag_satu.png" alt="">
+                                <div class="pre-detail">
+                                  <span class="caption">Packaging</span><br>
+                                  <h4 class="card-title-text">
+                                      Bungkus Makanan Kertas Berkualitas
+                                  </h4>
+                                  <a class="caption" href="#">Catatan untuk toko <i class="far fa-edit"></i></a>
+                                </div>
+                              </div>
+                              <table>
+                                <tr>
+                                  <td>Kategori</td>
+                                  <td>:</td>
+                                  <td>Packaging</td>
+                                </tr>
+                                <tr>
+                                  <td>Jenis Bahan</td>
+                                  <td>:</td>
+                                  <td>Blues White (BW) 250gsm</td>
+                                </tr>
+                                <tr>
+                                  <td>Ukuran Produk</td>
+                                  <td>:</td>
+                                  <td>9,0 x 5,5 cm</td>
+                                </tr>
+                                <tr>
+                                  <td>Jumlah Sisi</td>
+                                  <td>:</td>
+                                  <td>1 Sisi</td>
+                                </tr>
+                                <tr>
+                                  <td>Tipe Sudut</td>
+                                  <td>:</td>
+                                  <td>Sudut Lancip</td>
+                                </tr>
+                              </table>
+                            </div>
+                            <hr>
+                            <span class="title-text">Pilihan Layanan</span>
+                            <p class="caption">Kami memberikan pilihan layanan untuk kamu</p>
+                            <div class="form-group">
+                                <label for="materialSelect">Pilih Varian</label>
+                                <select class="form-control spec-input" id="materialSelect">
+                                    <option>Pilih varian layanan</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <p class="caption">
+                              Pada varian layanan ini, kamu akan mendapatkan:
+                            </p>
+                            <p><i class="far fa-clock feat-icon"></i> Waktu pengerjaan lebih cepat (4 Hari)</p>
+                            <p><i class="fas fa-check feat-icon"></i> Layanan pelanggan responsive</p>
+                            <p><i class="fas fa-check feat-icon"></i> Bahan baku kualitas premium</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- BAGIAN SPESIFIKASI DAN DESKRIPSI -->
+
+                    </div>
+                  </div>
+
+                  <!-- BAGIAN INPUT SPESIFIKASI -->
+                  <div class="col-12 col-md-5 stretch-card">
+                    <div class="card bg-gradient-yellow">
+                      <div class="card-body">
+                        <h4 class="card-title-text">
+                            Ringkasan Pembayaran
+                        </h4>
+                        <br>
+                        
+                        <div class="form-group">
+                          <label for="quantSelect">Kuantitas</label>
+                          <select class="form-control spec-input" id="quantSelect">
+                            <option>Pilih kuantitas cetak</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+
+                        <div class="number d-flex justify-content-end total-price">
+                          <h3>
+                            <span style="font-size: 14px; font-weight: 500;">Total </span>Rp 1.200.000
+                          </h3>
+                          
+                        </div>
+
+                        <button type="button" class="btn btn-primary cta-button">Lanjutkan</button>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- BAGIAN INPUT SPESIFIKASI -->
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
         
-        <div class="swiper-container banner-container">
-          
-          <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
 
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
+        <!-- <div class="card--list--wrapper mt-3">
+          <div class="row mt-3">
+            
+            <div class="col-12 col-md-12">
+              
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
           </div>
-
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next right"></div>
-          <div class="swiper-button-prev left"></div>
-        </div>
-
-        <div class="card card--highlight w-100">
-          
-          <div class="card-body d-flex flex-row justify-content-between">
-            
-          </div>
-          
-        </div>
+        </div> -->
 
       </div>
     </section>
@@ -305,28 +425,6 @@
   </script>
   <script src="../../js/script.js"></script>
 
-  <!-- Swiper -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
 
 </body>
 

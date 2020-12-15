@@ -1,18 +1,30 @@
 @import '../bootstrap/css/bootstrap.css';
 
-$gray-10 : #333333; //BODY
+// <<<<<<< HEAD
+$gray-10 : #333333;
+$gray-20 : #40454C;
+$gray-30 : #606060;
+// =======
+// $gray-10 : #333333; //BODY
+// >>>>>>> 436a374fa43329b70e193311a7e35dce2ddae452
 $gray-40 : #838994; //NAV, LABEL
-$blue-50 : #2F80ED; //PRIMARY
+$gray-50 : #E0E0E0;
+$gray-60 : #F6F6F6;
 $gray-70 : #F8F8F8;
 $gray-60 : #F2F2F2;
 
+$blue-50 : #2F80ED; //PRIMARY
 $red-60 : #F5222D;
 
 $yellow-50 :#F2994A;
 $font-size-base: 14px;
 
 
+// <<<<<<< HEAD
+// // $card-box-shadow : 0px 1px 6px #000000;
+//=======
 $card-box-shadow : 0px 1px 6px #31353b1f;
+// >>>>>>> 436a374fa43329b70e193311a7e35dce2ddae452
 
 
 h1,h2,h3,h4,h5,h6{
@@ -69,5 +81,5 @@ body{
 }
 
 @import 'component.scss';
-@import 'nav-style.scss';
+@import 'customer.scss';
   

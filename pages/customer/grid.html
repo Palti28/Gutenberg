@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="../../scss/main.css">
   <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
 </head>
 
 <body>
@@ -22,7 +19,7 @@
       
       <nav class="navbar navbar-expand-lg w-100">
         
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="../../assets/images/Logo.svg" alt="">
         </a>
         
@@ -46,23 +43,23 @@
           <form class="form-inline ml-0 ml-md-auto">
 
             <!-- Single Icon -->
-            <!-- <div class="single-icon">
+            <div class="single-icon">
               
               <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope top-nav-icon"></i>
               </a>
               
-            </div> -->
+            </div>
             
-            <!-- <div class="single-icon">
+            <div class="single-icon">
               
               <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell top-nav-icon"></i>
               </a>
               
-            </div> -->
+            </div>
 
             <div class="single-icon">
               
@@ -104,12 +101,12 @@
             
             <!-- User Profile  -->
             <div class="dropdown">
-              <a href="" data-toggle="modal" data-target="#loginModal"><i class="fas fa-sign-in-alt"></i> Masuk</a>
-              <!-- <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+              
+              <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar_blank.svg" alt="">
                 <span>Muhammad Rizky Ferianda</span>
-              </a> -->
+              </a>
               
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#">Action</a>
@@ -125,29 +122,6 @@
 
       </nav>
 
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade confirmation-alert authentication-login" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <!-- <img src="../../assets/images/Logo.svg" alt=""><br>
-        <h5 class="modal-title auth-title">Masuk</h5> -->
-          <div class="modal-body">
-            Perhatikan poin poin dibawah ini sebelum melanjutkan:
-            <ul>
-              <li>Pastikan desain kamu sudah benar dan sesuai</li>
-              <li>Setiap gambar yang digunakan sudah sesuai dengan hak cipta / copyright yang berlaku</li>
-              <li>Informasi yang ditampilkan pada kartu nama sudah benar dan sesuai</li>
-              <li>Saya akan mendapatkan jumlah sesuai pesanan (1000 lembar)</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batalkan</button>
-            <button type="button" class="btn btn-primary">Masukan ke keranjang</button>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="category">
@@ -255,37 +229,131 @@
     <section class="w-100">
       <div class="content landing-page">
         
-        <div class="swiper-container banner-container">
-          
-          <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
-
-          </div>
-
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next right"></div>
-          <div class="swiper-button-prev left"></div>
+        <div class="title">
+          <h2><span style="font-weight: 400;">Hasil pencarian untuk</span> <span class="search-title">Paperbag Makanan</span></h2>
         </div>
 
-        <div class="card card--highlight w-100">
+        <div class="card--highlight w-100 filter-card">
           
-          <div class="card-body d-flex flex-row justify-content-between">
-            
+          <div class="card-body d-flex justify-content-between">
+            <div class="filter">
+              <span>Filter</span>
+              <select>
+                <option value="0">Durasi Pengerjaan</option>
+              </select>
+              <select>
+                <option value="0">Perkiraan Budget</option>
+              </select>
+              <select>
+                <option value="0">Lokasi Toko</option>
+              </select>
+            </div>
+            <!-- <div class="p-2">Flex item</div> -->
+            <div class="ml-auto sort">
+              <span>Urutkan</span>
+              <select>
+                <option value="0">Relevansi</option>
+              </select>
+            </div>
           </div>
           
         </div>
+
+        <main class="page-content">
+			<div class="container-fluid p-3 mt-3">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+
+							<div class="col-md-3 stretch-card grid-margin">
+								<div class="card bg-gradient-red card-img-holder text-white">
+									<div class="card-body">
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 stretch-card grid-margin">
+								<div class="card bg-gradient-yellow card-img-holder text-white">
+									<div class="card-body">
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 stretch-card grid-margin">
+								<div class="card bg-gradient-green card-img-holder text-white">
+									<div class="card-body">
+										
+									</div>
+								</div>
+                            </div>
+                            
+                            <div class="col-md-3 stretch-card grid-margin">
+								<div class="card bg-gradient-green card-img-holder text-white">
+									<div class="card-body">
+										
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+        
+
+        <!-- <div class="card--list--wrapper mt-3">
+          <div class="row mt-3">
+            
+            <div class="col-12 col-md-12">
+              
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-3 pb-3">
+                <div class="row">
+                  <div class="card--product" style="width: 100%;">
+                    <img src="../../../assets/images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card--product__body">
+                      <span> Desain Poster Segala Ukuran </span>
+                      <h5> Rp 50.000 </h5>
+                      <span class="badge badge-success">Aktif</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div> -->
 
       </div>
     </section>
@@ -305,28 +373,6 @@
   </script>
   <script src="../../js/script.js"></script>
 
-  <!-- Swiper -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
 
 </body>
 

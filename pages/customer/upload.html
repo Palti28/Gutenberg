@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="../../scss/main.css">
   <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+  <style>
+      .stretch-card{
+          padding-left: 8px;
+          padding-right: 8px;
+      }
+  </style>
 </head>
 
 <body>
@@ -22,7 +25,7 @@
       
       <nav class="navbar navbar-expand-lg w-100">
         
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="../../assets/images/Logo.svg" alt="">
         </a>
         
@@ -46,23 +49,23 @@
           <form class="form-inline ml-0 ml-md-auto">
 
             <!-- Single Icon -->
-            <!-- <div class="single-icon">
+            <div class="single-icon">
               
               <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope top-nav-icon"></i>
               </a>
               
-            </div> -->
+            </div>
             
-            <!-- <div class="single-icon">
+            <div class="single-icon">
               
               <a class="dropdown-toggle dropdown-avatar nav-icon" href="#" role="button" id="dropdownCart"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell top-nav-icon"></i>
               </a>
               
-            </div> -->
+            </div>
 
             <div class="single-icon">
               
@@ -104,12 +107,12 @@
             
             <!-- User Profile  -->
             <div class="dropdown">
-              <a href="" data-toggle="modal" data-target="#loginModal"><i class="fas fa-sign-in-alt"></i> Masuk</a>
-              <!-- <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+              
+              <a class="d-flex flex-row dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="avatar avatar-sm" src="../../assets/images/dummy_avatar_blank.svg" alt="">
                 <span>Muhammad Rizky Ferianda</span>
-              </a> -->
+              </a>
               
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#">Action</a>
@@ -125,29 +128,6 @@
 
       </nav>
 
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade confirmation-alert authentication-login" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <!-- <img src="../../assets/images/Logo.svg" alt=""><br>
-        <h5 class="modal-title auth-title">Masuk</h5> -->
-          <div class="modal-body">
-            Perhatikan poin poin dibawah ini sebelum melanjutkan:
-            <ul>
-              <li>Pastikan desain kamu sudah benar dan sesuai</li>
-              <li>Setiap gambar yang digunakan sudah sesuai dengan hak cipta / copyright yang berlaku</li>
-              <li>Informasi yang ditampilkan pada kartu nama sudah benar dan sesuai</li>
-              <li>Saya akan mendapatkan jumlah sesuai pesanan (1000 lembar)</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batalkan</button>
-            <button type="button" class="btn btn-primary">Masukan ke keranjang</button>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="category">
@@ -254,39 +234,120 @@
     <!-- || CONTENT -->
     <section class="w-100">
       <div class="content landing-page">
+      
+        <main class="page-content">
+          <div class="container-fluid mt-3">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row grid-row">
+
+                  <div class="col-md-12">
+                    <div class="row">
+                      
+                      <!-- BAGIAN UPLOAD -->
+                      <div class="col-12 stretch-card upload-area">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title-text">
+                                Upload Design - Bungkus Makanan Kertas Berkualitas 
+                            </h4>
+                            <hr>
+                            <div class="upload-field">
+                              <div class="choose-file">
+                                <div class="d-flex align-items-start">
+                                  <input type="radio" name="select-upload" onclick="javascript:uploadCheck();" id="fileCheck"> 
+                                  <span class="upload-label">
+                                    <p>Unggah File Desain</p>
+                                    <ul>
+                                      <li>Format file yang diterima JPG, PDF, PNG, atau TIFF</li>
+                                      <li>Ukuran file maksimal 10 MB</li>
+                                      <li>Untuk pengiriman file lebih dari 1, harapkan menggunakan file .zip</li>
+                                    </ul>
+                                  </span>
+                                </div>
+                                <div class="d-flex justify-content-center file-upload">
+                                  <div class="drop-zone">
+                                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                                    <input type="file" name="myFile" class="drop-zone__input">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="by-link"></div>
+                            </div>
+                            <!-- <br> -->
+                            <div class="upload-field">
+                              <div class="choose-file">
+                                <div class="d-flex align-items-start">
+                                  <input type="radio" name="select-upload" onclick="javascript:uploadCheck();" id="linkCheck"> 
+                                  <span class="upload-label">
+                                    <p>Menggunakan link (untuk desain yang memiliki size besar dari 10 MB)</p>
+                                  </span>
+                                </div>
+                                <div class="by-link " id="ifLink" style="display: none;">
+                                  <input type="text" class="form-control" name="" id="">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <br> -->
+                            <div class="upload-field">
+                              <div class="choose-file">
+                                <div class="d-flex align-items-start">
+                                  <span class="info-label">
+                                    Belum punya desain? <a href="#">Pilih layanan terbaik dari desainer disini</a>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="by-link"></div>
+                            </div>
+                            <!-- <br> -->
+                            <div class="guide-label">
+                              <a href="#">Lihat panduan desain dan cetak</a>
+                            </div>
+                            <div class="upload-action">
+                              <button type="button" class="btn btn-outline-secondary">Upload Ulang</button>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Simpan</button>
+                            </div>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade confirmation-alert" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Konfirmasi</h5>
+                                  </div>
+                                  <div class="modal-body">
+                                    Perhatikan poin poin dibawah ini sebelum melanjutkan:
+                                    <ul>
+                                      <li>Pastikan desain kamu sudah benar dan sesuai</li>
+                                      <li>Setiap gambar yang digunakan sudah sesuai dengan hak cipta / copyright yang berlaku</li>
+                                      <li>Informasi yang ditampilkan pada kartu nama sudah benar dan sesuai</li>
+                                      <li>Saya akan mendapatkan jumlah sesuai pesanan (1000 lembar)</li>
+                                    </ul>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batalkan</button>
+                                    <button type="button" class="btn btn-primary">Masukan ke keranjang</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                      </div>
+                      <!-- BAGIAN UPLOAD -->
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
         
-        <div class="swiper-container banner-container">
-          
-          <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img class="banner-img" src="../../assets/images/banner1.png" alt="">
-            </div>
-
-          </div>
-
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next right"></div>
-          <div class="swiper-button-prev left"></div>
-        </div>
-
-        <div class="card card--highlight w-100">
-          
-          <div class="card-body d-flex flex-row justify-content-between">
-            
-          </div>
-          
-        </div>
-
       </div>
     </section>
     <!-- || CONTENT END -->
@@ -296,7 +357,9 @@
   <footer>
 
   </footer>
+
   <div class="backdrop-black" id="backdrop"></div>
+  <script src="../../js/upload-field.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
@@ -304,28 +367,13 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
   <script src="../../js/script.js"></script>
-
-  <!-- Swiper -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    function uploadCheck() {
+      if (document.getElementById('linkCheck').checked) {
+          document.getElementById('ifLink').style.display = 'block';
+      }
+      else document.getElementById('ifLink').style.display = 'none';
+    }
   </script>
 
 </body>

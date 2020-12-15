@@ -236,7 +236,7 @@ section.content,
 
     .card {
       border-radius: 8px;
-      box-shadow: $card-box-shadow;
+      //box-shadow: $card-box-shadow;
     }
   }
 }
@@ -344,6 +344,10 @@ section.content,
 
   .card--product__body {
     padding: 8px;
+// <<<<<<< HEAD
+//     //box-shadow: $card-box-shadow;
+// =======
+// >>>>>>> 436a374fa43329b70e193311a7e35dce2ddae452
 
     h5 {
       margin-top: 4px;
@@ -377,8 +381,13 @@ section.content,
   }
 
   color: #000;
+// <<<<<<< HEAD
+//   position: absolute;
+//   //box-shadow: 0px -1px 8px 1px rgb(0 0 0 / 17%);
+// =======
   position: fixed;
-  box-shadow: 0px -1px 8px 1px rgb(0 0 0 / 17%);
+  //box-shadow: 0px -1px 8px 1px rgb(0 0 0 / 17%);
+// >>>>>>> 436a374fa43329b70e193311a7e35dce2ddae452
   bottom: 0;
   left: 0;
   right: 0;
