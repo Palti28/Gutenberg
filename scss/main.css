@@ -25,13 +25,19 @@ hr {
   width: 100%;
 }
 
-body {
+html {
   font-size: 14px;
+}
+
+body {
   background-color: #F3F4F5;
   color: #333333;
 }
 body.sidenav-toggled aside {
   left: 0;
+}
+body.bottom-dialog--toggled {
+  overflow: hidden;
 }
 
 .cursor-pointer {
@@ -143,7 +149,7 @@ aside {
   overflow-y: auto;
   z-index: 999;
 }
-@media (min-width: 766px) {
+@media (min-width: 765px) {
   aside {
     display: block;
     left: 0;
@@ -151,6 +157,7 @@ aside {
     position: relative;
     border-radius: 8px;
     margin-bottom: 24px;
+    height: fit-content;
   }
 }
 
@@ -196,23 +203,28 @@ aside {
     position: absolute;
   }
 }
-section.content, .content {
+section.content,
+.content {
   padding-top: 0.5rem;
   padding-bottom: 40px;
 }
-section.content .card, .content .card {
+section.content .card,
+.content .card {
   border-radius: 0;
   box-shadow: none;
 }
-section.content .card .card-header, .content .card .card-header {
+section.content .card .card-header,
+.content .card .card-header {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
 @media (min-width: 765px) {
-  section.content, .content {
+  section.content,
+.content {
     padding: 24px 24px 48px;
   }
-  section.content .card, .content .card {
+  section.content .card,
+.content .card {
     border-radius: 8px;
     box-shadow: 0px 1px 6px #31353b1f;
   }
@@ -225,7 +237,7 @@ section.content .card .card-header, .content .card .card-header {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .container {
     max-width: 960px;
   }
@@ -278,9 +290,13 @@ section.content .card .card-header, .content .card .card-header {
 }
 
 .card--product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   cursor: pointer;
   border-radius: 8px;
   background-color: #fff;
+  box-shadow: 0px 1px 6px #31353b1f;
 }
 .card--product img {
   height: 170px;
@@ -296,7 +312,6 @@ section.content .card .card-header, .content .card .card-header {
 }
 .card--product .card--product__body {
   padding: 8px;
-  box-shadow: 0px 1px 6px #31353b1f;
 }
 .card--product .card--product__body h5 {
   margin-top: 4px;
@@ -319,7 +334,7 @@ section.content .card .card-header, .content .card .card-header {
 
 .bottom-dialog {
   color: #000;
-  position: absolute;
+  position: fixed;
   box-shadow: 0px -1px 8px 1px rgba(0, 0, 0, 0.17);
   bottom: 0;
   left: 0;
@@ -367,7 +382,7 @@ section.content .card .card-header, .content .card .card-header {
   }
 }
 
-input[type=file] {
+.custom-file-upload input[type=file] {
   display: none;
 }
 
@@ -526,6 +541,9 @@ input[type=radio] + label {
   list-style: none;
   padding: 0;
 }
+.timeline.text-nowrap .description {
+  white-space: nowrap;
+}
 .timeline li {
   counter-increment: section;
   position: relative;
@@ -678,6 +696,11 @@ input[type=radio] + label {
 }
 .modal .modal-portfolio .modal-body img {
   width: inherit;
+}
+
+.portfolio-single span {
+  font-weight: bolder;
+  margin-top: 8px;
 }
 
 /* Stand-alone icon */

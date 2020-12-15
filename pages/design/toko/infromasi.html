@@ -28,7 +28,7 @@
             <div class="dropdown">
               <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell" class="text-gray-50"></i>
+                <i class="fas fa-store-alt" class="text-gray-50"></i>
               </a>
               <div class="dropdown-menu register--vendor text-center p-0" aria-labelledby="dropdownMenuLink">
                 <div class="d-flex" href="#">
@@ -174,7 +174,7 @@
                   <div class="img-holder-medium">
                     <img src="../../../assets/images/dummy_avatar.jpg" class="border p-1" alt="">
                   </div>
-                  <div class="w-25">
+                  <div class="w-50">
                     <label for="">Ukuran optimal 300 x 300 piksel dengan Besar file: Maksimum 10.000.000 bytes (10
                       Megabytes). Ekstensi file yang diperbolehkan: JPG, JPEG, PNG</label>
                     <button class="btn btn-primary btn-block">Pilih Foto</button>
@@ -242,13 +242,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    <div class="btn-sm-block ml-lg-auto">
-                      <button class="btn btn-primary px-4">Simpan</button>
-                    </div>
-                  </div>
-                </div>
               </div>
               <!-- Portfolio -->
               <div class="tab-pane fade py-4" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
@@ -256,22 +249,40 @@
                   <p class="mb-0">Masukan portfolio Anda. Tekankan mengenai hasil yang Anda telah buat, berapa lama dan
                     juga skill
                     yang dipakai untuk menghasilkan portfolio tersebut.</p> <br>
-                  <button class="btn btn-primary ">Tambah Portfolio</button>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#newPortfolio">Tambah
+                    Portfolio</button>
                 </div>
                 <div class="row mt-3">
-                  <div class="col-4">
-                    <div class="portfolio cursor-pointer" data-toggle="modal" data-target="#detailPortfolio">
-                      <div class="img-holder-medium">
-                        <img src="../../../assets/images/product-1.jpg" alt="">
-                        <span>Nama Portfolio blabla buals ofassa</span>
+                  <div class="col-6 col-md-4">
+                    <div class="portfolio-single cursor-pointer d-flex flex-column" data-toggle="modal"
+                      data-target="#detailPortfolio">
+                      <div class="">
+                        <img src="../../../assets/images/product-1.jpg" class="w-100" alt="">
                       </div>
+                      <span>Nama Portfolio</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="keahlian">Keahlian</label>
+                      <textarea class="form-control" id="alamat" rows="3"
+                        placeholder="Cth: Photoshop, Illustrasi Vector, dll"></textarea>
                     </div>
                   </div>
                 </div>
               </div>
+
+
+            </div>
+
+            <div class="btn-sm-block ml-lg-auto">
+              <button class="btn btn-primary">Simpan</button>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- || CONTENT END -->
 
@@ -282,6 +293,23 @@
   </footer>
   <div class="backdrop-black" id="backdrop"></div>
   <!-- Modal Delete -->
+
+  <div class="modal fade" id="detailPortfolio" tabindex="-1" aria-labelledby="detailPortfolio" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-portfolio modal-md">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5>Nama Portfolio</h5>
+          <img src="../../../assets/images/product-1.jpg" class="mb-2" alt="">
+          <p>Fusce euismod accumsan nisl vel hendrerit. Phasellus aliquam quam nec quam volutpat, nec euismod diam
+            viverra. Vivamus eget erat et tortor vestibulum egestas. </p>
+          <button role="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal"
+            data-target="#deleteModal"><i class="fas fa-trash-alt"></i></button>
+          <button class="btn btn-warning"><i class="far fa-edit"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm">
       <div class="modal-content">
@@ -300,36 +328,30 @@
     </div>
   </div>
 
-  <div class="modal fade" id="detailPortfolio" tabindex="-1" aria-labelledby="detailPortfolio" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-portfolio modal-md">
+  <div class="modal fade" id="newPortfolio" tabindex="-1" aria-labelledby="newPortfolio" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
       <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newPortfolio">Portfolio Baru</h5>
+        </div>
         <div class="modal-body">
-          <img src="../../../assets/images/product-1.jpg" alt="">
-          <p>Fusce euismod accumsan nisl vel hendrerit. Phasellus aliquam quam nec quam volutpat, nec euismod diam
-            viverra. Vivamus eget erat et tortor vestibulum egestas. </p>
-            <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-            <button class="btn btn-warning"><i class="far fa-edit"></i></button>
+          <form>
+            <div class="form-group">
+              <label for="namaPortfolio">Nama Portfolio</label>
+              <input type="text" class="form-control" id="namaPortfolio" aria-describedby="namaPortfolio">
+            </div>
+            <button class="btn btn-outline-primary">Upload</button>
+            <div class="form-group">
+              <label for="keteranganPortfolio">Keterangan</label>
+              <textarea class="form-control" id="keteranganPortfolio" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Keluar</button>
+          <button type="button" class="btn btn-primary">Tambah</button>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="bottom-dialog" id="bottom-dialog">
-    <div class="py-3">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Preview Produk</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Edit </a>
-        </li>
-        <li class="nav-item">
-          <a role="button" data-toggle="modal" data-target="#deleteModal" class="nav-link">Hapus</a>
-        </li>
-        <li class="nav-item">
-          <a role="button" data-toggle="modal" data-target="#shareModal" class="nav-link">Bagikan</a>
-        </li>
-      </ul>
     </div>
   </div>
 

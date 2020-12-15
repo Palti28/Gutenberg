@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Design-All-Produk</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../scss/main.css">
+  <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-sm px-0 px-md-2 ">
+      <nav class="navbar navbar-expand-lg w-100">
+        <a class="navbar-brand" href="#">
+          <img src="../../../assets/images/Logo.svg" alt="">
+        </a>
+        <div class="d-block d-sm-block d-md-none">
+          <!-- <button class="btn "><i class="fas fa-plus mr-2"></i>Produk</button> -->
+          <i class="fas fa-bars" id="sidebarToggle"></i>
+        </div>
+        <div class="d-none d-md-block d-lg-block ml-auto">
+          <form class="form-inline ml-0 ml-md-auto">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-store-alt" class="text-gray-50"></i>
+              </a>
+              <div class="dropdown-menu register--vendor text-center p-0" aria-labelledby="dropdownMenuLink">
+                <div class="d-flex" href="#">
+                  <a href="" class="p-2">
+                    <img src="../../../assets/images/reg-printing.svg" alt="">
+                    <div>Printing Vendor</div>
+                  </a>
+                  <a href="" class="p-2">
+                    <img src="../../../assets/images/reg-designer.svg" alt="">
+                    <div> Design Vendor </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar avatar-sm" src="../../../assets/images/dummy_avatar.jpg" alt="">
+                Palti Gorat
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container-md px-0 px-md-2 d-flex">
+    <!-- || CONTENT -->
+    <section class="w-100 content">
+      <div class="content">
+        <div class="title">
+          <h2>Daftar</h2>
+          <p>Masukkan informasi umum yang diperlukan untuk membuka tokomu</p>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-4 mb-4">
+              <h5 class="">Data Pembayaran</h5>
+              <span class="text-primary">Langkah 4 dari 4</span>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="nomorIzin">Nama Pemilik Rekening</label>
+                  <input type="text" class="form-control" id="nomorIzin" aria-describedby="namaToko" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="nomorTelepon">Nama Bank</label>
+                  <select class="custom-select">
+                    <option selected>Bank Central Asia</option>
+                    <option value="1">SIM</option>
+                    <option value="2">Passpor</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="nomorTelepon">Nomor rekening</label>
+                  <input type="number" class="form-control" id="nomorIzin" aria-describedby="namaToko" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Dengan mendaftar sebagai vendor Printaneka,
+                    saya telah setuju untuk ditinjau atas kinerja operasional toko dan semua Syarat dan Ketentuan yang
+                    berlaku.</label>
+                </div>
+              </div>
+              <small></small>
+            </div>
+          </div>
+        </div>
+        <div class="title btn-sm-block ml-lg-auto">
+          <button class="btn btn-outline-secondary">Sebelumnya</button>
+          <button class="btn btn-primary">Daftar</button>
+        </div>
+      </div>
+    </section>
+    <!-- || CONTENT END -->
+  </div>
+  <footer>
+
+  </footer>
+  <div class="backdrop-black" id="backdrop"></div>
+  <!-- Modal Delete -->
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="../../../js/script.js"></script>
+
+</body>
+
+</html>

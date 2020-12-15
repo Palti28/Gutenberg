@@ -3,23 +3,26 @@
 // Mobile First
 
 // || BUTTON
-.btn{
+.btn {
   border-radius: 8px;
   font-size: 14px;
 }
-.btn-sm-block{
+
+.btn-sm-block {
   float: right;
+
   @media (max-width: 764px) {
     float: unset;
-    .btn{
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
     }
   }
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
   background-color: #fff;
 }
 
@@ -76,7 +79,8 @@ header {
 a.dropdown-avatar {
   color: black;
   text-decoration: none;
-  span{
+
+  span {
     margin-top: 4px;
     margin-left: 8px;
     max-width: 100px;
@@ -135,14 +139,14 @@ aside {
   overflow-y: auto;
   z-index: 999;
 
-  @media (min-width: 766px) {
+  @media (min-width: 765px) {
     display: block;
     left: 0;
     margin-top: 24px;
     position: relative;
     border-radius: 8px;
     margin-bottom: 24px;
-
+    height: fit-content;
   }
 }
 
@@ -207,7 +211,8 @@ aside {
 
 
 // || PAGE - CONTENT
-section.content, .content {
+section.content,
+.content {
   // padding: 24px;
   padding-top: .5rem;
   padding-bottom: 40px;
@@ -216,16 +221,14 @@ section.content, .content {
     border-radius: 0;
     box-shadow: none;
 
-    .card-header{
+    .card-header {
       border-top-right-radius: 8px;
       border-top-left-radius: 8px;
     }
   }
 
   //SPECIAL CASE FOR DETAIL ORDER
-  .detail-order{
-    
-  }
+  .detail-order {}
 
 
   @media (min-width: 765px) {
@@ -255,7 +258,7 @@ section.content, .content {
 
 // || Media Query
 // from tablet onwards
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .container {
     max-width: 960px;
   }
@@ -298,11 +301,12 @@ section.content, .content {
   @media (min-width: 766px) {
     width: 50%;
   }
-  input{
+
+  input {
     border-right: 0;
   }
 
-  .input-group-text{
+  .input-group-text {
     background-color: transparent;
   }
 }
@@ -315,11 +319,16 @@ section.content, .content {
 
 // || CARD-PRODUCT
 .card--product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   cursor: pointer;
   border-radius: 8px;
   background-color: #fff;
+  box-shadow: $card-box-shadow;
 
-  img{
+
+  img {
     height: 170px;
     object-fit: cover;
   }
@@ -335,7 +344,6 @@ section.content, .content {
 
   .card--product__body {
     padding: 8px;
-    box-shadow: $card-box-shadow;
 
     h5 {
       margin-top: 4px;
@@ -345,15 +353,16 @@ section.content, .content {
 }
 
 // || MODAL - CONFIRMATION
-.modal{
+.modal {
   border: 0;
-  .modal-header{
+
+  .modal-header {
     border: 0;
     padding-top: 24px;
     padding-bottom: 0px;
   }
 
-  .modal-footer{
+  .modal-footer {
     border: 0;
     padding-top: 0px;
     padding-bottom: 24px;
@@ -362,12 +371,13 @@ section.content, .content {
 
 
 // || DIALOG - BOTTOM
-.bottom-dialog{
+.bottom-dialog {
   @media (min-width: 766px) {
     display: none;
   }
+
   color: #000;
-  position: absolute;
+  position: fixed;
   box-shadow: 0px -1px 8px 1px rgb(0 0 0 / 17%);
   bottom: 0;
   left: 0;
@@ -380,12 +390,13 @@ section.content, .content {
   display:none;
   z-index: 999;
 
-  .nav{
-    .nav-item{
-      a{
+  .nav {
+    .nav-item {
+      a {
         color: $gray-10;
       }
-      &:hover{
+
+      &:hover {
         background-color: rgba($blue-50, .1);
       }
     }
@@ -393,13 +404,13 @@ section.content, .content {
 }
 
 // || TABLE - VARIANT
-.table.table--variant{
-  th{
+.table.table--variant {
+  th {
     border-top: 0;
   }
 
-  &.table--order{
-    img{
+  &.table--order {
+    img {
       height: 50px;
       width: 50px;
       object-fit: cover;
@@ -408,8 +419,8 @@ section.content, .content {
 }
 
 // || IMAGE HOLDER
-.img-holder-medium{
-  img{
+.img-holder-medium {
+  img {
     border-radius: 4px;
     height: 130px;
     width: 130px;
@@ -425,11 +436,13 @@ section.content, .content {
 
 
 // CUSTOM INPUT FILE BUTTON
-input[type="file"]{
-  display: none;
+.custom-file-upload {
+  input[type="file"] {
+    display: none;
+  }
 }
 
-label{
+label {
   margin: 0;
 }
 
@@ -449,14 +462,17 @@ label{
 // || CHECKBOX RADIO TOGGLE
 $input-focus-border-color: #80bdff;
 $input-border-color: #ced4da;
-$input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+;
 $input-disabled-bg: #e9ecef;
 $input-border-color-active: $blue-50;
 
-  // checkbox, switch
-  $disabled-inner-color: #E1E6F9; 
-  $active-inner-color : #fff;
+// checkbox, switch
+$disabled-inner-color: #E1E6F9;
+$active-inner-color : #fff;
+
 @supports(-webkit-appearance: none) or (-moz-appearance: none) {
+
   input[type='checkbox'],
   input[type='radio'] {
     --active: #E1251B;
@@ -614,7 +630,7 @@ $input-border-color-active: $blue-50;
 }
 
 // || ICON - SOCIAL
-.icon--social{
+.icon--social {
   font-size: 2rem;
 }
 
@@ -629,6 +645,12 @@ $input-border-color-active: $blue-50;
   display: flex;
   list-style: none;
   padding: 0;
+
+  &.text-nowrap{
+    .description{
+      white-space: nowrap;
+    }
+  }
 
   li {
     counter-increment: section;
@@ -690,7 +712,7 @@ $input-border-color-active: $blue-50;
         display: block;
         padding: 10px 10px 10px 0;
 
-        .desc_title{
+        .desc_title {
           font-size: 14px;
         }
       }
@@ -750,12 +772,12 @@ $input-border-color-active: $blue-50;
 
       &::before {
         // background-color: white;
-        // border-color: $red-500;
+        // border-color: $blue-50;
       }
 
       &~li {
         &::before {
-          background-color:grey;
+          background-color: grey;
         }
 
         &::after {
@@ -763,11 +785,13 @@ $input-border-color-active: $blue-50;
         }
 
         .description {
-          color:  grey;
-          .desc_time{
-            color:  grey;
+          color: grey;
+
+          .desc_time {
+            color: grey;
           }
-          .desc_title{
+
+          .desc_title {
             font-size: 10px;
           }
         }
@@ -779,49 +803,49 @@ $input-border-color-active: $blue-50;
 
 }
 
-.timeline--step{
+.timeline--step {
   color: $blue-50;
   font-size: 14px;
 }
 
-.timeline--tittle{
+.timeline--tittle {
   font-weight: bolder;
 }
 
-.icon.chat-indicator{
+.icon.chat-indicator {
   font-size: 10px;
 
-  &-online{
+  &-online {
     color: mediumseagreen;
   }
-  &-offline{
+
+  &-offline {
     color: $gray-40;
   }
 }
 
-.chat-box{
-  .chat-box-head{
+.chat-box {
+  .chat-box-head {}
 
-  }
-
-  .chat-box-body{
-    .single-chat{
+  .chat-box-body {
+    .single-chat {
       background-color: $gray-60;
       max-width: 300px;
       padding: 10px;
-      margin: .7rem 0 .7rem 0 ;
-      
-      img{
+      margin: .7rem 0 .7rem 0;
+
+      img {
         height: 80px;
         width: 80px;
         object-fit: cover;
         border-radius: 8px;
       }
 
-      &.single-chat-other{
+      &.single-chat-other {
         border-radius: 16px 16px 16px 0;
       }
-      &.single-chat-me{
+
+      &.single-chat-me {
         margin-left: auto;
         border-radius: 16px 16px 0px 16px;
 
@@ -831,13 +855,22 @@ $input-border-color-active: $blue-50;
 }
 
 // || MODAL - PORTFOLIO
-.modal{
-  .modal-portfolio{
-    .modal-body{
+.modal {
+  .modal-portfolio {
+    .modal-body {
       width: inherit;
-      img{
+
+      img {
         width: inherit;
       }
     }
+  }
+}
+
+
+.portfolio-single {
+  span {
+    font-weight: bolder;
+    margin-top: 8px;
   }
 }

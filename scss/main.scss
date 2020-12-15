@@ -9,6 +9,7 @@ $gray-60 : #F2F2F2;
 $red-60 : #F5222D;
 
 $yellow-50 :#F2994A;
+$font-size-base: 14px;
 
 
 $card-box-shadow : 0px 1px 6px #31353b1f;
@@ -43,8 +44,11 @@ hr{
   width: 100%;
 }
 
-body{
+html{
   font-size: 14px;
+}
+
+body{
   background-color: #F3F4F5;
   color: $gray-10;
 
@@ -53,6 +57,10 @@ body{
       // display: block;
   		left: 0;
   	}
+  }
+
+  &.bottom-dialog--toggled{
+    overflow: hidden;
   }
 }
 
