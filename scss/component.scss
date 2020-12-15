@@ -220,7 +220,7 @@ section.content, .content {
 
     .card {
       border-radius: 8px;
-      box-shadow: $card-box-shadow;
+      //box-shadow: $card-box-shadow;
     }
   }
 }
@@ -322,7 +322,7 @@ section.content, .content {
 
   .card--product__body {
     padding: 8px;
-    box-shadow: $card-box-shadow;
+    //box-shadow: $card-box-shadow;
 
     h5 {
       margin-top: 4px;
@@ -355,7 +355,7 @@ section.content, .content {
   }
   color: #000;
   position: absolute;
-  box-shadow: 0px -1px 8px 1px rgb(0 0 0 / 17%);
+  //box-shadow: 0px -1px 8px 1px rgb(0 0 0 / 17%);
   bottom: 0;
   left: 0;
   right: 0;
