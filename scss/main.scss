@@ -1,12 +1,8 @@
 @import '../bootstrap/css/bootstrap.css';
 
-// <<<<<<< HEAD
 $gray-10 : #333333;
 $gray-20 : #40454C;
-$gray-30 : #606060;
-// =======
-// $gray-10 : #333333; //BODY
-// >>>>>>> 436a374fa43329b70e193311a7e35dce2ddae452
+$gray-30 : #606060; //BODY
 $gray-40 : #838994; //NAV, LABEL
 $gray-50 : #E0E0E0;
 $gray-60 : #F6F6F6;
@@ -19,67 +15,82 @@ $red-60 : #F5222D;
 $yellow-50 :#F2994A;
 $font-size-base: 14px;
 
-
-// <<<<<<< HEAD
-// // $card-box-shadow : 0px 1px 6px #000000;
-//=======
 $card-box-shadow : 0px 1px 6px #31353b1f;
-// >>>>>>> 436a374fa43329b70e193311a7e35dce2ddae452
 
-
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $gray-10;
   font-weight: bolder;
 }
 
-h1{}
 
-h2{
+h2 {
   font-size: 20px;
 }
 
-h3{
+h3 {
   font-size: 18px;
 }
 
-h5{
+h5 {
   font-size: 16px;
 }
 
 
-label{
+label {
   font-size: 12px;
   color: $gray-40;
 }
 
-hr{
+hr {
   width: 100%;
 }
 
-html{
+html {
   font-size: 14px;
 }
 
-body{
+body {
   background-color: #F3F4F5;
-  color: $gray-10;
+  color: $gray-30;
 
-  &.sidenav-toggled{
-  	aside{
+  &.sidenav-toggled {
+    aside {
       // display: block;
-  		left: 0;
-  	}
+      left: 0;
+    }
   }
 
-  &.bottom-dialog--toggled{
+  &.bottom-dialog--toggled {
     overflow: hidden;
   }
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
+}
+
+.font-weight-medium {
+  font-weight: 500
+}
+
+.text-sm-ellipsis {
+
+  @media (max-width: 540px) {
+    max-width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.badge{
+  line-height: unset;
 }
 
 @import 'component.scss';
 @import 'customer.scss';
-  

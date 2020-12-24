@@ -18,18 +18,21 @@
     e.preventDefault();
     $("body").toggleClass("sidenav-toggled");
     $("#backdrop").css("display", "block");
+    $("body").css("overflow", "hidden");
   });
 
   $("#backdrop").on("click", function (e) {
     e.preventDefault();
     if ($("body").hasClass("sidenav-toggled")) {
       $("body").toggleClass("sidenav-toggled");
+      $("body").css("overflow", "auto");
+
       console.log('a')
     } else if ($("body").hasClass("bottom-dialog--toggled")) {
       $("body").toggleClass("bottom-dialog--toggled");
       $("#bottom-dialog").slideToggle('fast');
       console.log('bc')
-    } 
+    }
     $("#backdrop").css("display", "none");
   })
 

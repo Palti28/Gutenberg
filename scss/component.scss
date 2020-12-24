@@ -429,10 +429,10 @@ section.content,
 
 // || IMAGE HOLDER
 .img-holder-medium {
-  img {
+  &>img {
     border-radius: 4px;
     height: 130px;
-    width: 130px;
+    width: 130px !important;
     object-fit: cover;
     margin-right: 10px;
 
@@ -882,4 +882,12 @@ $active-inner-color : #fff;
     font-weight: bolder;
     margin-top: 8px;
   }
+}
+
+// single-custom-job
+.single-custom-job{
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #E0E0E0;
+  cursor: pointer;
 }
