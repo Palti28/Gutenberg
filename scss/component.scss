@@ -4,7 +4,7 @@
 
 // || BUTTON
 .btn {
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 14px;
 }
 
@@ -173,6 +173,9 @@ aside {
 
       a.nav-link {
         color: $gray-40;
+        i{
+          width: 16px;
+        }
 
         &.active {
           color: $blue-50;
@@ -813,7 +816,7 @@ $active-inner-color : #fff;
 }
 
 .timeline--step {
-  color: $blue-50;
+  color: $blue-50;  
   font-size: 14px;
 }
 
@@ -891,3 +894,59 @@ $active-inner-color : #fff;
   border: 1px solid #E0E0E0;
   cursor: pointer;
 }
+
+
+//DROPDOWN DROPDOWN-AVATAR
+header{
+  .dropdown{
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+      background-color: #F3F4F5;
+      font-weight: 600;
+      padding: 8px;
+      border-radius: 4px;
+    }
+    .dropdown-toggle.dropdown-avatar{
+      
+    }
+  }
+}
+
+
+.ekspedisi-img{
+  height: 100px;
+  width: auto;
+}
+
+.el-ghost{
+  .btn{
+    min-height: 0;
+    font-size: 10px;
+    line-height: 0.8;
+  }
+}
+
+.single-cat,.single-cat-child{
+  .el-ghost{
+    display: none;
+  }
+  &:hover{
+    .el-ghost{
+      display: inline-block !important;
+    }
+  }
+}
+
+// .el-helper{
+
+//   +.el-ghost{
+//     display: none;
+//   }
+//   &:hover{
+//     +.el-ghost{
+//       display: inline-block !important;
+//     }
+//   }
+// }

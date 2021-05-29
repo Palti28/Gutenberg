@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Verifikasi Mitra</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../scss/main.css">
+  <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-sm px-0 px-md-2 ">
+      <nav class="navbar navbar-expand-lg w-100">
+        <a class="navbar-brand" href="#">
+          <img src="../../../assets/images/Logo.svg" alt="">
+        </a>
+        <div class="d-block d-sm-block d-md-none">
+          <!-- <button class="btn "><i class="fas fa-plus mr-2"></i>Produk</button> -->
+          <i class="fas fa-bars" id="sidebarToggle"></i>
+        </div>
+        <div class="d-none d-md-block d-lg-block ml-auto">
+          <form class="form-inline ml-0 ml-md-auto">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-store-alt" class="text-gray-50"></i>
+              </a>
+              <div class="dropdown-menu register--vendor text-center p-0" aria-labelledby="dropdownMenuLink">
+                <div class="d-flex" href="#">
+                  <a href="" class="p-2">
+                    <img src="../../../assets/images/reg-printing.svg" alt="">
+                    <div>Printing Vendor</div>
+                  </a>
+                  <a href="" class="p-2">
+                    <img src="../../../assets/images/reg-designer.svg" alt="">
+                    <div> Design Vendor </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar avatar-sm" src="../../../assets/images/dummy_avatar.jpg" alt="">
+                Palti Gorat
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+      </nav>
+    </div>
+  </header>
+  <div class="container-md px-0 px-md-2">
+
+    <div class="row">
+      <div class="col-12">
+        <div class="px-2 py-3">
+          <div class="title">
+            <h2>Verifikasi Mitra</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- || CONTENT -->
+      <div class="col-12 col-md-8 order-md-1 order-2">
+        <div class="content px-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="mb-3">Informasi Mitra</h5>
+              <div class="d-flex flex-row">
+                <div class="img-holder-medium">
+                  <img src="../../../assets/images/dummy_avatar.jpg" class="border p-1" alt="">
+                </div>
+                <div class="w-50">
+                  <label for="">Ukuran optimal 300 x 300 piksel dengan Besar file: Maksimum 10.000.000 bytes (10
+                    Megabytes). Ekstensi file yang diperbolehkan: JPG, JPEG, PNG</label>
+                  <button class="btn btn-primary btn-block">Pilih Foto</button>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="namaToko">Nama Toko</label>
+                    <input type="text" class="form-control" id="namaToko" aria-describedby="namaToko" value="Toba Art">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="sloganToko">Slogan Toko</label>
+                    <input type="text" class="form-control" id="sloganToko" aria-describedby="sloganToko"
+                      Value="Horas Printing Toba">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="nomorTelepon">Nomor Telepon</label>
+                    <input type="text" class="form-control" id="nomorTelepon" aria-describedby="nomorTelepon"
+                      value="08291763192">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email" value="art@toba.com">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <textarea class="form-control" id="alamat" rows="3"
+                    value="Printing pertama di Toba yang menyediakan beragar tipe printing dari kertas hvs sampai baliho besar">Jalan Pematang siantar no.2 Sibulele, balige, Toba, Sumatera Utara</textarea>
+                  
+                    </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="kabupaten">Kabupaten</label>
+                    <input type="text" class="form-control" id="kabupaten" aria-describedby="kabupaten"
+                    value="Toba Samosir">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="kodePos">Kode Pos</label>
+                    <input type="text" class="form-control" id="kodePos" aria-describedby="kodePos" value="22315">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="alamat">Deskripsi Mitra</label>
+                    <textarea class="form-control" id="alamat" rows="3"
+                    value="Printing pertama di Toba yang menyediakan beragar tipe printing dari kertas hvs sampai baliho besar">Printing pertama di Toba yang menyediakan beragar tipe printing dari kertas hvs sampai baliho besar</textarea>
+                  
+                  </div>
+                </div>
+              </div>
+              
+  
+              <div class="btn-sm-block ml-lg-auto">
+                <a href="./data-perusahaan.html" class="btn btn-primary" >Lanjut</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 order-md-2 order-1">
+        <div class="content px-0 pb-0">
+          <div class="card">
+            <div class="card-body">
+              <div class="">
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="informasiMitra">
+                  <label class="form-check-label" for="informasiMitra">
+                    Informasi Mitra
+                  </label>
+                </div>
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="dataMitra">
+                  <label class="form-check-label" for="dataMitra">
+                    Data Mitra
+                  </label>
+                </div>
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="dpju">
+                  <label class="form-check-label" for="dpju">
+                    Data Penanggung jawab usaha
+                  </label>
+                </div>
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="pembayaran">
+                  <label class="form-check-label" for="pembayaran">
+                    Data Pembayaran
+                  </label>
+                </div>
+                <!-- <div class="form-check mr-2">
+                  <input class="form-check-input" type="checkbox" value="" id="fasilitasMitra">
+                  <label class="form-check-label" for="fasilitasMitra">
+                    Fasilitas Mitra
+                  </label>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- || CONTENT END -->
+
+
+  </div>
+  <footer>
+
+  </footer>
+  <div class="backdrop-black" id="backdrop"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Verifikasi Mitra</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../scss/main.css">
+  <script src="https://kit.fontawesome.com/aa93dafcad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-sm px-0 px-md-2 ">
+      <nav class="navbar navbar-expand-lg w-100">
+        <a class="navbar-brand" href="#">
+          <img src="../../../assets/images/Logo.svg" alt="">
+        </a>
+        <div class="d-block d-sm-block d-md-none">
+          <!-- <button class="btn "><i class="fas fa-plus mr-2"></i>Produk</button> -->
+          <i class="fas fa-bars" id="sidebarToggle"></i>
+        </div>
+        <div class="d-none d-md-block d-lg-block ml-auto">
+          <form class="form-inline ml-0 ml-md-auto">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-store-alt" class="text-gray-50"></i>
+              </a>
+              <div class="dropdown-menu register--vendor text-center p-0" aria-labelledby="dropdownMenuLink">
+                <div class="d-flex" href="#">
+                  <a href="" class="p-2">
+                    <img src="../../../assets/images/reg-printing.svg" alt="">
+                    <div>Printing Vendor</div>
+                  </a>
+                  <a href="" class="p-2">
+                    <img src="../../../assets/images/reg-designer.svg" alt="">
+                    <div> Design Vendor </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="border-right ml-2 mr-3">&nbsp;</div>
+            <div class="dropdown">
+              <a class="dropdown-toggle dropdown-avatar" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar avatar-sm" src="../../../assets/images/dummy_avatar.jpg" alt="">
+                Palti Gorat
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+      </nav>
+    </div>
+  </header>
+  <div class="container-md px-0 px-md-2">
+
+    <div class="row">
+      <div class="col-12">
+        <div class="px-2 py-3">
+          <div class="title">
+            <h2>Verifikasi Mitra</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- || CONTENT -->
+      <div class="col-12 col-md-8 order-md-1 order-2">
+        <div class="content px-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="mb-3">Data Penanggung Jawab Usaha</h5>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="">Nama Lenkap Penanggung Jawab</label>
+                    <input type="text" class="form-control" id="namaToko" aria-describedby="namaToko" value="Sahala Baringin Panjaitan">
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="namaToko">Nomor Telepon</label>
+                    <input type="text" class="form-control" id="namaToko" aria-describedby="namaToko" value="0822768122">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="sloganToko">Email</label>
+                    <input type="text" class="form-control" id="sloganToko" aria-describedby="sloganToko"
+                      Value="sahalapjtn@gmail.com">
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <!-- <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="nomorIzin">NPWP Perusahaan</label>
+                    <input type="text" class="form-control" id="nomorIzin" aria-describedby="namaToko"
+                      placeholder="">
+                  </div>
+                </div> -->
+                <div class="col-12 col-md-6">
+                  <div class="mb-3">
+                    <div class="form-group">
+                      <label for="nomorIzin">Jenis Identitas</label>
+                      <select class="custom-select" id="validatedInputGroupSelect" required>
+                        <option value="">KTP </option>
+                        <option value="1">KTP</option>
+                        <option value="2">SIM</option>
+                        <option value="3">...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <label for="sloganToko">Nomor Identitas</label>
+                    <input type="number" class="form-control" id="sloganToko" aria-describedby="sloganToko"
+                      Value="12120128282912">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div class="mb-3">
+                    <small for="asd">Identitas Penanggung Jawab</small>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">Pilih file</label>
+                      <small class="text-muted">Pastikan dokumen masih berlaku saat ini, dapat dibaca
+                        dengan jelas, tidak blur, rusak, tertutup jari, atau terdapat pantulan
+                        cahaya. Foto dari identitas asli. Ukuran maskimal 3 MB per file. Ekstensi
+                        file yang diperbolehkan: JPG, JPEG, PNG, PDF</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="btn-sm-block ml-lg-auto">
+                <a href="./data-pembayaran.html" class="btn btn-primary">Lanjut</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 order-md-2 order-1">
+        <div class="content px-0 pb-0">
+          <div class="card">
+            <div class="card-body">
+              <div class="">
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="informasiMitra" checked>
+                  <label class="form-check-label" for="informasiMitra">
+                    Informasi Mitra
+                  </label>
+                </div>
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="dataMitra" checked>
+                  <label class="form-check-label" for="dataMitra">
+                    Data Mitra
+                  </label>
+                </div>
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="dpju">
+                  <label class="form-check-label" for="dpju">
+                    Data Penanggung jawab usaha
+                  </label>
+                </div>
+                <div class="form-check mr-2 mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="pembayaran">
+                  <label class="form-check-label" for="pembayaran">
+                    Data Pembayaran
+                  </label>
+                </div>
+                <!-- <div class="form-check mr-2">
+                  <input class="form-check-input" type="checkbox" value="" id="fasilitasMitra">
+                  <label class="form-check-label" for="fasilitasMitra">
+                    Fasilitas Mitra
+                  </label>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- || CONTENT END -->
+
+
+  </div>
+  <footer>
+
+  </footer>
+  <div class="backdrop-black" id="backdrop"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

@@ -67,7 +67,7 @@ body.bottom-dialog--toggled {
 }
 
 .btn {
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 14px;
 }
 
@@ -202,6 +202,9 @@ aside {
 }
 .sidebar .sidebar__menu .nav a.nav-link {
   color: #838994;
+}
+.sidebar .sidebar__menu .nav a.nav-link i {
+  width: 16px;
 }
 .sidebar .sidebar__menu .nav a.nav-link.active {
   color: #2F80ED;
@@ -730,6 +733,35 @@ input[type=radio] + label {
   cursor: pointer;
 }
 
+header .dropdown {
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+header .dropdown:hover {
+  background-color: #F3F4F5;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 4px;
+}
+.ekspedisi-img {
+  height: 100px;
+  width: auto;
+}
+
+.el-ghost .btn {
+  min-height: 0;
+  font-size: 10px;
+  line-height: 0.8;
+}
+
+.single-cat .el-ghost, .single-cat-child .el-ghost {
+  display: none;
+}
+.single-cat:hover .el-ghost, .single-cat-child:hover .el-ghost {
+  display: inline-block !important;
+}
+
 .landing-page {
   padding: 24px 16px;
 }
@@ -881,9 +913,6 @@ table tr {
   height: 1.25rem;
 }
 
-.card {
-  margin-bottom: 1rem;
-}
 .card img {
   width: 100%;
 }
